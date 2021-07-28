@@ -48,7 +48,7 @@ async def gladiators(event):
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(tme)
-      event.send_message("Spammed successfully!!\n© @TeamGladiators")
+      await event.client.send_message("Spammed successfully!!\n© @TeamGladiators")
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
@@ -108,7 +108,7 @@ async def _(e):
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
-      xD = str(event.text[6:])
+      xD = str(event.text[9:])
       ldr = xD.split(" ", 1)
       counter = int(ldr[0])
       mesg = str(ldr[1])
