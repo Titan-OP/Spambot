@@ -79,6 +79,7 @@ start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
 help_caption = """
 **Hᴇʏ ᴍᴀsᴛᴇʀ,
 ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
+[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 start_caption = f"""
 **Nᴏᴡ ᴍᴇ ᴛᴏ ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍʏsᴇʟғ.
