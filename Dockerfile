@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/hackerbot
-RUN git clone -b shiken https://github.com/noob-kittu/hackerbot /root/hackerbot
-WORKDIR /root/hackerbot
+# Copy Python Requirements to /root/spambot
+RUN git clone -b shiken https://github.com/noob-kittu/spambot /root/spambot
+WORKDIR /root/spambot
 
-#Copy config file to /root/hackerbot/hackerbot
-COPY ./hackerbot/sample_config.py ./hackerbot/config.py* /root/hackerbot/hackerbot/
+#Copy config file to /root/spambot/spambot
+COPY ./spambot/sample_config.py ./spambot/config.py* /root/spambot/spambot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","hackerbot"]
+CMD ["python3","-m","spambot"]
