@@ -5,6 +5,18 @@ from spambot import (
     OWNER_USERNAME,
     SUDO_USERS
 )
+from spambot import (
+    ALLOW_EXCL,
+    CERT_PATH,
+    TOKEN,
+    URL,
+    SUPPORT_CHAT,
+    dispatcher,
+    StartTime,
+    telethn,
+    pbot,
+    updater,
+)
 import asyncio
 import io
 import os
