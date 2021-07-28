@@ -209,8 +209,11 @@ def help_menu(update, context):
                 reply_markup=InlineKeyboardMarkup(helpbuttons),
                 parse_mode=ParseMode.MARKDOWN,
             )
+    except Exception as xy:
+        await query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
            
+
 start_handler = CommandHandler("start", start)
 help_handler = CommandHandler("help", help)
 callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
