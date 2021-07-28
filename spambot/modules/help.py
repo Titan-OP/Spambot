@@ -210,7 +210,7 @@ def help_menu(update, context):
                 parse_mode=ParseMode.MARKDOWN,
             )
     except Exception as xy:
-        await query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+        query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
            
 
