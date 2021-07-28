@@ -10,23 +10,38 @@ import io
 import os
 from asyncio import sleep
 from telethon import utils
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 client = tbot
 
 
 DEFAULTUSER = str(OWNER_USERNAME)
 
 help_img = "https://telegra.ph/file/6e92103071aa47ee7023e.mp4"
-help_caption = """
+
+dev_caption = """
 **░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
 
-**/addsudo:** use this while replying to anyone will add him as a sudo user!!
 
-**/rmsudo:** use this while replying to anyone will remove him from sudo user!!
+**/addsudo:** Use this while replying to anyone will add him as a sudo user!!
 
-**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>
+**/rmsudo:** Use this while replying to anyone will remove him from sudo user!!
+
+**/leave <chat id>:** Bot will leave that chat!!
+
+**/updates:** Check new updates and updates the bot!!
+
+**/restart:** Restarts the bot!!(Too fast!! **Supersonic**)
+
+[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+"""
+spam_caption = """
+**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
+
+
+**/spam:** Spams text for given counter!!\nSyntax: /spam <counter> <text>
 
 **/dspam:** Delay spam a text for given counter after given time!!
-Syntax: /dspam <seconds>;<counter>;<text>
+Syntax: /dspam <seconds> <counter> <text>
 
 **/mspam:** Spams media for given counter!!
 Syntax: /mspam <counter>
@@ -41,15 +56,20 @@ Syntax: /replyraid (replying to anyone)
 **/dreplyraid:** Deactivates reply raid on the user!!
 Syntax: /dreplyraid (replying to anyone)
 
-©️ @TeamGladiators
+[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 
 start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
+
+help_caption = """
+**Hᴇʏ ᴍᴀsᴛᴇʀ,
+ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
+"""
 start_caption = f"""
-Now let me introduce myself.
-I am most powerfull Spam-Bot ever made!
-I'm here to destroy your opponent 🔥[🔥](https://telegra.ph/file/1312f063f0395fc933edd.mp4)🔥
-I can spam continuosly with less flood-wait error and more accuracy!
+**Nᴏᴡ ᴍᴇ ᴛᴏ ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍʏsᴇʟғ.
+I ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ sᴘᴀᴍ-ʙᴏᴛ ᴇᴠᴇʀ ᴍᴀᴅᴇ!
+I'ᴍ ʜᴇʀᴇ ᴛᴏ ᴅᴇsᴛʀᴏʏ ʏᴏᴜʀ ᴏᴘᴘᴏɴᴇɴᴛ 🔥[🔥](https://telegra.ph/file/1312f063f0395fc933edd.mp4)🔥
+I ᴄᴀɴ sᴘᴀᴍ ᴄᴏɴᴛɪɴᴜᴏsʟʏ ᴡɪᴛʜ ʟᴇss ғʟᴏᴏᴅ-ᴡᴀɪᴛ ᴇʀʀᴏʀ ᴀɴᴅ ᴡɪᴛʜ ᴍᴏʀᴇ ᴀᴄᴄᴜʀᴀᴄʏ!**
 
 _↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_
 **『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**
@@ -57,9 +77,11 @@ _↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_
 ©️ @TeamGladiators
 """
 
+close_caption = """
+**Hᴇʟᴘ ᴍᴇɴᴜ ʜᴀs ʙᴇᴇɴ ᴄʟᴏsᴇᴅ!!**
+"""
 
-
-startbuttons = [
+helpbuttons = [
     [
         InlineKeyboardButton(text="Spam Cmds", callback_data="spamcmds"),
         InlineKeyboardButton(text="Dev Cmds", callback_data="devcmds")
@@ -77,7 +99,7 @@ help_buttons = [
 ]
 
 
-helpbuttons = [
+startbuttons = [
     [
         InlineKeyboardButton(
             text="Repo", url="https://github.com/Gladiators-Projects/SpamBot"),
@@ -91,6 +113,11 @@ helpbuttons = [
     ]
 ]
   
+openbuttons = [
+    [
+        InlineKeyboardButton(text="Open Again", callback_data="open")
+    ]
+]
 
 # @register(pattern="^/start(?: |$)(.*)")
 # async def gladiators(event):
@@ -106,18 +133,20 @@ helpbuttons = [
 #   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
 #     if "-" in str(event.chat_id):
 #         try:
-#             await event.reply(help_img, caption=f"**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
+#             await event.reply(help_img, caption=f"**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
 #         except:
-#             await event.reply(f"**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
+#             await event.reply(f"**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
 #     else:
 #         try:
-#             await event.client.send_file(event.chat_id, help_img, caption="**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
+#             await event.client.send_file(event.chat_id, help_img, caption="**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
 #         except:
-#             await event.client.send_message(event.chat_id, "**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
+#             await event.client.send_message(event.chat_id, "**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
 
     
 @run_async
 def start(update: Update, context: CallbackContext):
+    if update.effective_chat.type != "private":
+        return
     update.effective_message.reply_text(
         start_caption,
         reply_markup=InlineKeyboardMarkup(startbuttons),
@@ -137,3 +166,55 @@ def help(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN,
         timeout=60,
     )
+
+
+
+@run_async
+@sudo_plus
+def help_menu(update, context):
+    query = update.callback_query
+    spam_cmd = re.match(r"spamcmds\((.+?)\)", query.data)
+    dev_cmd = re.match(r"devcmds\((.+?)\)", query.data)
+    back_cmd = re.match(r"back\((.+?)\)", query.data)
+    open_cmd = re.match(r"open\((.+?)\)", query.data)
+    close_cmd = re.match(r"close\((.+?)\)", query.data)
+    try:
+        if spam_cmd:
+            query.message.edit_text(
+                text=spam_caption,
+                reply_markup=InlineKeyboardMarkup(help_buttons),
+                parse_mode=ParseMode.MARKDOWN,
+            )
+        elif dev_cmd:
+            query.message.edit_text(
+                text=dev_caption,
+                reply_markup=InlineKeyboardMarkup(help_buttons),
+                parse_mode=ParseMode.MARKDOWN,
+            )
+        elif back_cmd:
+            query.message.edit_text(
+                text=help_caption,
+                reply_markup=InlineKeyboardMarkup(helpbuttons),
+                parse_mode=ParseMode.MARKDOWN,
+            )
+        elif close_cmd:
+            query.message.edit_text(
+                text=close_caption,
+                reply_markup=InlineKeyboardMarkup(openbuttons),
+                parse_mode=ParseMode.MARKDOWN,
+            )
+        elif open_cmd:
+            query.message.edit_text(
+                text=help_caption,
+                reply_markup=InlineKeyboardMarkup(helpbuttons),
+                parse_mode=ParseMode.MARKDOWN,
+            )
+
+           
+start_handler = CommandHandler("start", start)
+help_handler = CommandHandler("help", help)
+callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
+
+dispatcher.add_handler(start_handler)
+dispatcher.add_handler(help_handler)
+dispatcher.add_handler(callback_handler)
