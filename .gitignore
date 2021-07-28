@@ -1,3 +1,17 @@
+hackerbot/modules/helper_funcs/temp.txt
+hackerbot/elevated_users.json
+hackerbot/config.py
+hackerbot/config.ini
+log.txt
+kangsticker.png
+updates.txt
+
+# Session files
+hackerbot/*.session
+hackerbot/*.session-journal
+Masha.session-journal
+*.session
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +141,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VS code and shit
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
