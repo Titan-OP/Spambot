@@ -25,7 +25,7 @@ async def gladiators(event):
       xD = str(event.text[6:])
       ldr = xD.split(" ", 1)
       counter = int(ldr[0])
-      mesg = ldr[1]
+      mesg = str(ldr[1])
       if counter > 99:
         return await event.reply("Please give value greater than or equal to 99.")
       for i in range(counter):
@@ -111,7 +111,7 @@ async def gladiators(event):
       xD = str(event.text[6:])
       ldr = xD.split(" ", 1)
       counter = int(ldr[0])
-      mesg = ldr[1]
+      mesg = str(ldr[1])
       if counter > 2000:
         return await event.reply("`Please give value greater than or equal to 2000.`")
       for i in range(counter):
