@@ -24,7 +24,8 @@
 
 ## 🗒️ Nᴇᴄᴇssᴀʀʏ Vᴀʀɪᴀʙʟᴇs
 
-☞ `API_ID` - Get your API_ID from [my.telegram.org](https://my.telegram.org/)
-☞ `API_HASH` - Get your API_HASH from [my.telegram.org](https://my.telegram.org/)
-☞ `MONGO_DB_URI` - Get your MONGO_DB_URI from [mongodb.com](https://www.mongodb.com/) Want help? Here is [Tutorial](https://t.me/Gladiators_Projects/7)
-☞ `LOGGER` - Your logger group id get that using any other bot!!
+☞ `API_ID` - Get your API_ID from [my.telegram.org](https://my.telegram.org/)<br>
+☞ `API_HASH` - Get your API_HASH from [my.telegram.org](https://my.telegram.org/)<br>
+☞ `MONGO_DB_URI` - Get your MONGO_DB_URI from [mongodb.com](https://www.mongodb.com/) Want help? Here is [Tutorial](https://t.me/Gladiators_Projects/7)<br>
+☞ `LOGGER` - Your logger group id get that using any other bot!!<br>
+☞ `SUPPORT_CHAT` - Your public group username where bot will give starting bot notification get that using any other bot!!<br>
