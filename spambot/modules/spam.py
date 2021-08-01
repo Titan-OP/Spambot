@@ -27,11 +27,10 @@ async def gladiators(event):
       counter = int(ldr[0])
       mesg = str(ldr[1])
       if counter > 99:
-        return await event.reply("Please give value greater than or equal to 99.")
+        return await event.reply("Please give value less than or equal to 99.")
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(1)
-      await event.client.send_message(event.chat, "Spammed successfully!!\n© @TeamGladiators")
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
@@ -48,7 +47,6 @@ async def gladiators(event):
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(tme)
-      await event.client.send_message("Spammed successfully!!\n© @TeamGladiators")
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
@@ -61,14 +59,11 @@ async def gladiators(e):
         text = e.text.split()
         counter = int(text[1])
         counter += 1
-        if counter > 99:
-          return await e.reply("Please give value greater than or equal to 99.")
         media = await reply.download_media( "SpamBot/downloads/")
         for i in range(1, counter):
           await e.client.send_file(e.chat_id, media)
           await asyncio.sleep(2)
         os.remove(media)
-        await e.client.send_message(e.chat, "Spammed successfully!!\n© @TeamGladiators")
       except Exception as xy:
         await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
@@ -98,7 +93,6 @@ async def _(e):
         for xx in docs:
           await e.client.send_file(e.chat_id, file=(xx))
           await asyncio.sleep(2)
-        await e.client.send_message(e.chat, "Spammed successfully!!\n© @TeamGladiators")
       except Exception as xy:
         await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
         
@@ -112,11 +106,26 @@ async def gladiators(event):
       ldr = xD.split(" ", 1)
       counter = int(ldr[0])
       mesg = str(ldr[1])
-      if counter > 2000:
-        return await event.reply("`Please give value greater than or equal to 2000.`")
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(2)
-      await event.client.send_message(event.chat, "Spammed successfully!!\n© @TeamGladiators")
+    except Exception as xy:
+      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+
+
+
+
+@register(pattern="^/uspam(?: |$)(.*)")
+async def gladiators(event):
+  if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
+    try:
+      xD = str(event.text[9:])
+      ldr = xD.split(" ", 1)
+      counter = int(ldr[0])
+      mesg = str(ldr[1])
+      a = 1
+      while a == 1:
+        await event.client.send_message(event.chat, mesg)
+        await asyncio.sleep(2)
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
