@@ -22,10 +22,10 @@ from telethon.tl.types import InputStickerSetID, InputStickerSetShortName
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
-      xD = str(event.text[6:])
+      xD = event.text[6:]
       ldr = xD.split(" ", 1)
       counter = int(ldr[0])
-      mesg = str(ldr[1])
+      mesg = ldr[1]
       if counter > 99:
         return await event.reply("Please give value less than or equal to 99.")
       for i in range(counter):
@@ -39,11 +39,11 @@ async def gladiators(event):
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
-      xD = str(event.text[7:])
+      xD = event.text[7:]
       lst = xD.split(" ", 2)
       tme = float(lst[0])
       counter = int(lst[1])
-      mesg = str(lst[2])
+      mesg = lst[2]
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(tme)
@@ -102,10 +102,10 @@ async def _(e):
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
-      xD = str(event.text[9:])
+      xD = event.text[9:]
       ldr = xD.split(" ", 1)
       counter = int(ldr[0])
-      mesg = str(ldr[1])
+      mesg = ldr[1]
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(2)
@@ -119,13 +119,10 @@ async def gladiators(event):
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
-      xD = str(event.text[9:])
-      ldr = xD.split(" ", 1)
-      counter = int(ldr[0])
-      mesg = str(ldr[1])
+      xD = event.text[7:]
       a = 1
       while a == 1:
-        await event.client.send_message(event.chat, mesg)
+        await event.client.send_message(event.chat, xD)
         await asyncio.sleep(2)
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
