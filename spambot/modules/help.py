@@ -185,49 +185,52 @@ def help(update: Update, context: CallbackContext):
     )
 
 
-
 @run_async
-@sudo_plus
 def help_menu(update, context):
-    query = update.callback_query
-    spam_cmd = re.match(r"spamcmds\((.+?)\)", query.data)
-    dev_cmd = re.match(r"devcmds\((.+?)\)", query.data)
-    back_cmd = re.match(r"back\((.+?)\)", query.data)
-    open_cmd = re.match(r"open\((.+?)\)", query.data)
-    close_cmd = re.match(r"close\((.+?)\)", query.data)
-    try:
-        if spam_cmd:
-            query.message.edit_text(
-                text=spam_caption,
-                reply_markup=InlineKeyboardMarkup(help_buttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif dev_cmd:
-            query.message.edit_text(
-                text=dev_caption,
-                reply_markup=InlineKeyboardMarkup(help_buttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif back_cmd:
-            query.message.edit_text(
-                text=help_caption,
-                reply_markup=InlineKeyboardMarkup(helpbuttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif close_cmd:
-            query.message.edit_text(
-                text=close_caption,
-                reply_markup=InlineKeyboardMarkup(openbuttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif open_cmd:
-            query.message.edit_text(
-                text=help_caption,
-                reply_markup=InlineKeyboardMarkup(helpbuttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-    except Exception as xy:
-        query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+    
+    
+# @run_async
+# @sudo_plus
+# def help_menu(update, context):
+#     query = update.callback_query
+#     spam_cmd = re.match(r"spamcmds\((.+?)\)", query.data)
+#     dev_cmd = re.match(r"devcmds\((.+?)\)", query.data)
+#     back_cmd = re.match(r"back\((.+?)\)", query.data)
+#     open_cmd = re.match(r"open\((.+?)\)", query.data)
+#     close_cmd = re.match(r"close\((.+?)\)", query.data)
+#     try:
+#         if spam_cmd:
+#             query.message.edit_text(
+#                 text=spam_caption,
+#                 reply_markup=InlineKeyboardMarkup(help_buttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif dev_cmd:
+#             query.message.edit_text(
+#                 text=dev_caption,
+#                 reply_markup=InlineKeyboardMarkup(help_buttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif back_cmd:
+#             query.message.edit_text(
+#                 text=help_caption,
+#                 reply_markup=InlineKeyboardMarkup(helpbuttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif close_cmd:
+#             query.message.edit_text(
+#                 text=close_caption,
+#                 reply_markup=InlineKeyboardMarkup(openbuttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif open_cmd:
+#             query.message.edit_text(
+#                 text=help_caption,
+#                 reply_markup=InlineKeyboardMarkup(helpbuttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#     except Exception as xy:
+#         query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
            
 
