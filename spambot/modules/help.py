@@ -187,6 +187,32 @@ def help(update: Update, context: CallbackContext):
 
 @run_async
 def help_menu(update, context):
+    query = update.callback_query
+    if query.data == "spamcmds":
+        query.message.edit_text(
+            text=spam_caption,
+            reply_markup=InlineKeyboardMarkup(help_buttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "devcmds":
+        query.message.edit_text(
+            text=dev_caption,
+            reply_markup=InlineKeyboardMarkup(help_buttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "back":
+        query.message.edit_text(
+            text=help_caption,
+            reply_markup=InlineKeyboardMarkup(helpbuttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "open":
+        query.message.edit_text(
+            text=help_caption,
+            reply_markup=InlineKeyboardMarkup(openbuttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    
     
     
 # @run_async
