@@ -40,6 +40,24 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 
 
 replies = [
+    "Pehle main tereko chakna dega, fir daru pilayega, fir jab aap dimag se nahi L*nd se sochoge, tab bolega.."
+	"तेरी छोटी बहन साली कुतिया की चिकनी चिकनी बिना बाल वाली चूत के चिथड़े उड़ा डालूंगा अपने 9 इंच लंबे लंड से , समझा बेटीचोद साले बहन के लौड़े** \n\nतेरा बाप हूं मैं मादरचोद साले gandu , तू मेरी नाजायज औलाद है , जा जाके पूछ अपनी मम्मी साली रंडी से \n\nतेरी अप्पी बता रही थी कि तू बहुत बड़ा मादर चोद है, तूने ही अपनी अम्मी को चोद कर अपनी अप्पी पैदा की, और तू बहुत बड़ा गांडू भी है, कितने रेट है तेरे गाड़ मरवाने के ??\nतेरी मां की चूत को पिकाचू और ग्लेडिएटर्स हमेशा पेलते हैं।\nऔर ये भी बता कि गाड़ मरवाता है, कंडोम लगा के या बिना कण्डोम के ? तेल लेकर तू आएगा या मैं ही जापानी तेल लेकर आउ ?"
+	"Teri ammy ke sath mai role play karunga🤣🤣🤣🤣🤣🤣usko malik ki wife banaunga aur khud driver banke pelunga usko!"
+	"TERI MAA KI GAAAAND ME DANDAA DAAL KE DANDDA TODD DUNGAA MADARCHOD BAAP HU TERA BEHEN KE LUNDDD"
+	"Phool murjhate achhe nahi lagte aap land khujate acche nahi lagte yehi umar hai chodne ki yaaro aap bathroom mein hilaate acche nahi lagte."
+	"Teri behn ko bolunga ki mere liye paani lao aur jb wo paani lene ke liye jhukegi tbi peeche se utha ke pel dunga"
+	"Chinaal ke gadde ke nipple ke baal ke joon- Prostitute’s breast’s nipple’s hair’s lice"
+	"Teri maa ki gaand mein abhi bhar bhar ke gaali deta hun madarchod bhosdike ruk teri maa ka bhosda randi ka pilla madarchod chus le mera loda bhosdike"
+	"Saawan ka mahina pawan kare shor jake gand mara bskd kahi aur."
+	"Hey mere bete kaise ho beta tum\nUss raat jab maine teri maa choda tha jiske 9 mahine baad tum paida hue bhot maza aaya tha mujhe aur teri maa ko bhi!!"
+	"Teri maa ki gaand mein abhi bhar bhar ke gaali deta hun madarchod bhosdike ruk teri maa ka bhosda randi ka pilla madarchod chus le mera loda bhosdike"
+	"TERIIIIIIII MAAAAAAAAAA KI CHUTTTTT MEEEEEEEEE GHODEEEE KA LUNDDDDDDD MADARCHODDDDDDD GASTI KE BAXHEEEEE"
+	"TERI MAA KA MARS PE KOTHA KHULWAAUNGA 🔥😂"
+	"G4ND😈 M3 TERI ᏞᎾhᎬ🥒🥒  KI ᏒᎾᎠ D4LDUNGA😸😸bᎥᏞᏞᎥ 😺 bᎪᏁᎪ  K3 CH0DUNG4💦💦👅👅 T3R ᎪmmᎽ  K0👻👻ᏆᎬᏃᎪb😍😍  ᎠᎪᎪᏞ  ᎠuᏁᎶᎪ T3R1👄B3HN K3😜😜😜 B00R 👙👙MEM4D3RCH0D🙈🙈JH4NT3🖕 ᏁᎾᏟhᏞuᏁᎶᎪ🥳🥳  ᏆᎬᎬ1 bᎬhᏁ  K1🍌🍌SU4R K1 😈ᏁᎪsᎪᏞ Ꮮ0ᎳᎠu 🙈T3R1 ᎪmmᎽ😺😺😺  K0 F4NS1 LAGA DUNG4😹😹💦💦 G44ND 💣ME TER1 AC1D🍆🍆 D44LDUNG4🍒ThᎪᏁᎠᎬ 😹 ᏢᎪᎪᏁᎥ SE 👙ᏁᎬhᏞᎪ K3 CH0DUNG4 🥳🥳TER1 CHHOT1💦💦 B3HN KO😹TATT1💩💩 KRDUNG4 TER1  Ꮆf  KE😺😺 muh  ᏢᎬ 👅👅😈"
+	"MADARCHOODOO.••>___βħΔG βΣτΔ βħΔG τΣRΔΔΔ βΔPPP ΔΥΔΔ___<•••🔥ΔΨUSH HΣRΣ🔥RυKKKK RυKK βΣτΔΔ βHΔGGG KΔHΔ RΔHΔΔ HΔII ΔβHI τΟ τΣRI мΔΔ ζHυδΣGII RυKK☜☜☜мΔτLΔββ βΔβΥ мΔRVΔJΣΣΣ мΔПΣGIII👅👅👅👅>>>>◑︿◐JHΔПτ βHΔRR KI ΔυKΔτ  ПΔHI τΣRI ΔυR βΔPPP ςΣ LΔδΣGΔΔΔ◑︿◐<<<<<τΣRI βΣHΣП KI GΔПδ мΣ LΟHΣ KΔ RΟδδ δΔL δυПGΔ🎋🎋🎋βILLII βΔПΔ KΣ ζHΟδυПGΔ τΣRI βΣHΣП KΟΟ▀▄▀▄▀▄τΣRI мΔΔ KI GΔПδδ мΣ βΣΔR KI βΟττLΣ δΔL KΣ FΟδδ δυПGΔ🍾🍾🍾________βHΔGGG δΔRLIПG βHΔGGG___GΔПδδ βΔζζHΔ KΣΣ βHΔGGGG____βΔP ΔΥΔ τΣRΔ 😎ΔΨUSH HΣRΣ😎>>>>>◑︿◐JHΔПτ βHΔRR KI ΔυKΔτ  ПΔHI τΣRI ΔυR βΔPPP ςΣ LΔδΣGΔΔΔ◑︿◐<<<<<τΣRI βΣHΣП KI GΔПδ мΣ LΟHΣ KΔ RΟδδ δΔL δυПGΔ🎋🎋🎋βILLII βΔПΔ KΣ ζHΟδυПGΔ τΣRI βΣHΣП KΟΟ▀▄▀▄▀▄ΨΩUR ҒΔTHΣR #Pika_Pika_Pikachuuu HΣRΣ😎😎"
+	"MADARCHODD😁-):-P:-\:'(:3:'(:'((^-)(^-):3:3:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/ BHEN KE LODE APNE BAAP KO🤥🤥 B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)(^o^)(^o^)GAALI DEGA RANDI WALE 🤒🤒🤒(^o^)(^o^)(^o^)(^o^)(^o^)APNI MA SE PHUCH KI TERI MAAA NE MERI MUTH KAISE MARI THI SALE BHOT BAD TARIKE SE TERI MAA KI GHAND MARI  THI😂😂😂😂 -/:-/:-/:-/:-/:-/:-/:-/:-/:-/:B-)B-)B-)B-)B-)B-)B-)TERI MAA KO LOCAL CONDOM SE CHODA 🌎🌎🌎🌎🌎🌎HA TO GHAND KE ANDAR CONDOM BLAST HOGYA OR BBHADWE TU LODA PAKAD KE BHAR AAGYA BHOSDIKE MADARCHODB-):-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/ CHALL ABB NIKKL BBHAADWEE😒😒"
+	"Uss raat bada Maza aaya Jab glคdiatør͢͢͢𝓼 Teri maa ke upar aur teri maa glคdiatør͢͢͢𝓼 ke neeche\n\nOh yeah!! Oh yeah!!"
+	"Teri Maa ki chut mein diya Gladiators ne moot!!"
     "Kaali Chut Ke Safed Jhaant…"
     "Abla Naari, Tere Bable Bhaari… "
     "Gote Kitne Bhi Badey Ho, Lund Ke Niche Hi Rehtein Hain… "
@@ -249,6 +267,48 @@ replies = [
 ]
 
 raid = [
+    "Pehle main tereko chakna dega, fir daru pilayega, fir jab aap dimag se nahi L*nd se sochoge, tab bolega.."
+	"तेरी छोटी बहन साली कुतिया की चिकनी चिकनी बिना बाल वाली चूत के चिथड़े उड़ा डालूंगा अपने 9 इंच लंबे लंड से , समझा बेटीचोद साले बहन के लौड़े** \n\nतेरा बाप हूं मैं मादरचोद साले gandu , तू मेरी नाजायज औलाद है , जा जाके पूछ अपनी मम्मी साली रंडी से \n\nतेरी अप्पी बता रही थी कि तू बहुत बड़ा मादर चोद है, तूने ही अपनी अम्मी को चोद कर अपनी अप्पी पैदा की, और तू बहुत बड़ा गांडू भी है, कितने रेट है तेरे गाड़ मरवाने के ??\nतेरी मां की चूत को पिकाचू और ग्लेडिएटर्स हमेशा पेलते हैं।\nऔर ये भी बता कि गाड़ मरवाता है, कंडोम लगा के या बिना कण्डोम के ? तेल लेकर तू आएगा या मैं ही जापानी तेल लेकर आउ ?"
+	"Teri ammy ke sath mai role play karunga🤣🤣🤣🤣🤣🤣usko malik ki wife banaunga aur khud driver banke pelunga usko!"
+	"TERI MAA KI GAAAAND ME DANDAA DAAL KE DANDDA TODD DUNGAA MADARCHOD BAAP HU TERA BEHEN KE LUNDDD"
+	"Phool murjhate achhe nahi lagte aap land khujate acche nahi lagte yehi umar hai chodne ki yaaro aap bathroom mein hilaate acche nahi lagte."
+	"Teri behn ko bolunga ki mere liye paani lao aur jb wo paani lene ke liye jhukegi tbi peeche se utha ke pel dunga"
+	"Chinaal ke gadde ke nipple ke baal ke joon- Prostitute’s breast’s nipple’s hair’s lice"
+	"Teri maa ki gaand mein abhi bhar bhar ke gaali deta hun madarchod bhosdike ruk teri maa ka bhosda randi ka pilla madarchod chus le mera loda bhosdike"
+	"Saawan ka mahina pawan kare shor jake gand mara bskd kahi aur."
+	"Hey mere bete kaise ho beta tum\nUss raat jab maine teri maa choda tha jiske 9 mahine baad tum paida hue bhot maza aaya tha mujhe aur teri maa ko bhi!!"
+	"Teri maa ki gaand mein abhi bhar bhar ke gaali deta hun madarchod bhosdike ruk teri maa ka bhosda randi ka pilla madarchod chus le mera loda bhosdike"
+	"TERIIIIIIII MAAAAAAAAAA KI CHUTTTTT MEEEEEEEEE GHODEEEE KA LUNDDDDDDD MADARCHODDDDDDD GASTI KE BAXHEEEEE"
+	"TERI MAA KA MARS PE KOTHA KHULWAAUNGA 🔥😂"
+    "RANDI KE PILLE",
+    "TERIIIII MAAA KO BHEJJJ",
+    "TERAA BAAAAP HU",
+    "teri MAA KI CHUT ME HAAT DAALLKE BHAAG JAANUGA",
+    "Teri maa KO SARAK PE LETAA DUNGA",
+    "TERI MAA KO GB ROAD PE LEJAKE BECH DUNGA",
+    "Teri maa KI CHUT MÉ KAALI MITCH",
+    "TERI MAA SASTI RANDI HAI",
+    "TERI MAA KI CHUT ME KABUTAR DAAL KE SOUP BANAUNGA MADARCHOD",
+    "TERI MAAA RANDI HAI",
+    "TERI MAAA KI CHUT ME DETOL DAAL DUNGA MADARCHOD",
+    "TERI MAA KAAA BHOSDAA",
+    "TERI MAA KI CHUT ME LAPTOP",
+    "Teri maa RANDI HAI",
+    "TERI MAA KO BISTAR PE LETAAKE CHODUNGA",
+    "TERI MAA KO AMERICA GHUMAAUNGA MADARCHOD",
+    "TERI MAA KI CHUT ME NAARIYAL PHOR DUNGA",
+    "TERI MAA KE GAND ME DETOL DAAL DUNGA",
+    "TERI MAAA KO HORLICKS PILAUNGA MADARCHOD",
+    "TERI MAA KO SARAK PE LETAAA DUNGAAA",
+    "TERI MAA KAA BHOSDA",
+    "MERAAA LUND PAKAD LE MADARCHOD",
+    "CHUP TERI MAA AKAA BHOSDAA",
+    "TERIII MAA CHUF GEYII KYAAA LAWDEEE",
+	"G4ND😈 M3 TERI ᏞᎾhᎬ🥒🥒  KI ᏒᎾᎠ D4LDUNGA😸😸bᎥᏞᏞᎥ 😺 bᎪᏁᎪ  K3 CH0DUNG4💦💦👅👅 T3R ᎪmmᎽ  K0👻👻ᏆᎬᏃᎪb😍😍  ᎠᎪᎪᏞ  ᎠuᏁᎶᎪ T3R1👄B3HN K3😜😜😜 B00R 👙👙MEM4D3RCH0D🙈🙈JH4NT3🖕 ᏁᎾᏟhᏞuᏁᎶᎪ🥳🥳  ᏆᎬᎬ1 bᎬhᏁ  K1🍌🍌SU4R K1 😈ᏁᎪsᎪᏞ Ꮮ0ᎳᎠu 🙈T3R1 ᎪmmᎽ😺😺😺  K0 F4NS1 LAGA DUNG4😹😹💦💦 G44ND 💣ME TER1 AC1D🍆🍆 D44LDUNG4🍒ThᎪᏁᎠᎬ 😹 ᏢᎪᎪᏁᎥ SE 👙ᏁᎬhᏞᎪ K3 CH0DUNG4 🥳🥳TER1 CHHOT1💦💦 B3HN KO😹TATT1💩💩 KRDUNG4 TER1  Ꮆf  KE😺😺 muh  ᏢᎬ 👅👅😈"
+	"MADARCHOODOO.••>___βħΔG βΣτΔ βħΔG τΣRΔΔΔ βΔPPP ΔΥΔΔ___<•••🔥ΔΨUSH HΣRΣ🔥RυKKKK RυKK βΣτΔΔ βHΔGGG KΔHΔ RΔHΔΔ HΔII ΔβHI τΟ τΣRI мΔΔ ζHυδΣGII RυKK☜☜☜мΔτLΔββ βΔβΥ мΔRVΔJΣΣΣ мΔПΣGIII👅👅👅👅>>>>◑︿◐JHΔПτ βHΔRR KI ΔυKΔτ  ПΔHI τΣRI ΔυR βΔPPP ςΣ LΔδΣGΔΔΔ◑︿◐<<<<<τΣRI βΣHΣП KI GΔПδ мΣ LΟHΣ KΔ RΟδδ δΔL δυПGΔ🎋🎋🎋βILLII βΔПΔ KΣ ζHΟδυПGΔ τΣRI βΣHΣП KΟΟ▀▄▀▄▀▄τΣRI мΔΔ KI GΔПδδ мΣ βΣΔR KI βΟττLΣ δΔL KΣ FΟδδ δυПGΔ🍾🍾🍾________βHΔGGG δΔRLIПG βHΔGGG___GΔПδδ βΔζζHΔ KΣΣ βHΔGGGG____βΔP ΔΥΔ τΣRΔ 😎ΔΨUSH HΣRΣ😎>>>>>◑︿◐JHΔПτ βHΔRR KI ΔυKΔτ  ПΔHI τΣRI ΔυR βΔPPP ςΣ LΔδΣGΔΔΔ◑︿◐<<<<<τΣRI βΣHΣП KI GΔПδ мΣ LΟHΣ KΔ RΟδδ δΔL δυПGΔ🎋🎋🎋βILLII βΔПΔ KΣ ζHΟδυПGΔ τΣRI βΣHΣП KΟΟ▀▄▀▄▀▄ΨΩUR ҒΔTHΣR #Pika_Pika_Pikachuuu HΣRΣ😎😎"
+	"MADARCHODD😁-):-P:-\:'(:3:'(:'((^-)(^-):3:3:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/ BHEN KE LODE APNE BAAP KO🤥🤥 B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)B-)(^o^)(^o^)GAALI DEGA RANDI WALE 🤒🤒🤒(^o^)(^o^)(^o^)(^o^)(^o^)APNI MA SE PHUCH KI TERI MAAA NE MERI MUTH KAISE MARI THI SALE BHOT BAD TARIKE SE TERI MAA KI GHAND MARI  THI😂😂😂😂 -/:-/:-/:-/:-/:-/:-/:-/:-/:-/:B-)B-)B-)B-)B-)B-)B-)TERI MAA KO LOCAL CONDOM SE CHODA 🌎🌎🌎🌎🌎🌎HA TO GHAND KE ANDAR CONDOM BLAST HOGYA OR BBHADWE TU LODA PAKAD KE BHAR AAGYA BHOSDIKE MADARCHODB-):-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/:-/ CHALL ABB NIKKL BBHAADWEE😒😒"
+	"Uss raat bada Maza aaya Jab glคdiatør͢͢͢𝓼 Teri maa ke upar aur teri maa glคdiatør͢͢͢𝓼 ke neeche\n\nOh yeah!! Oh yeah!!"
+	"Teri Maa ki chut mein diya Gladiators ne moot!!"
     "Gote Kitne Bhi Badey Ho, Lund Ke Niche Hi Rehtein Hain… "
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
     "TERE BEHEN K CHUT ME CHAKU DAAL KAR CHUT KA KHOON KAR DUGA",
@@ -344,12 +404,16 @@ async def _(event):
 
 @run_async
 @sudo_plus
+@typing_action
 def rraid(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
     bot, args = context.bot, context.args
     user_id = extract_user(message, args)
+    if user_id in DEV_USERS:
+        message.reply_text("I can't betray @TeamGladiators's crew!!")
+        
     user_member = bot.getChat(user_id)
     rt = ""
 
@@ -369,6 +433,26 @@ def rraid(update: Update, context: CallbackContext) -> str:
             user_member.first_name
         )
     )
+
+
+
+
+@sudo_plus
+@typing_action
+@register(pattern="^/dspam(?: |$)(.*)")
+async def gladiators(e):
+    Pika = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    xd = await e.get_reply_message()
+    if len(Pika) == 2:
+        message = str(Pika[1])
+        print(message)
+        a = await e.client.get_entity(message)
+        g = a.id
+        c = a.first_name
+        mention = f"[{c}](tg://user?id={g})"
+        if g in 
+        counter = int(Pika[0])
+        
 
 @run_async
 @sudo_plus
@@ -398,10 +482,7 @@ def drraid(update: Update, context: CallbackContext) -> str:
         )
     )
 
-@run_async
-@sudo_plus
-def rraid(update: Update, context: CallbackContext) -> str:
-    message = update.effective_message
+
     
 
 
