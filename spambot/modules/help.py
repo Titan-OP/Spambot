@@ -1,3 +1,7 @@
+import importlib
+import time
+import re
+from sys import argv
 from spambot.events import register
 from spambot import (
     DEV_USERS,
@@ -24,7 +28,7 @@ from asyncio import sleep
 from telethon import utils
 from spambot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from spambot.modules.helper_funcs.extraction import extract_user
-from telegram.ext import CallbackContext, CommandHandler, run_async, CallbackQueryHandler, MessageHandler
+from telegram.ext import CallbackContext, CommandHandler, run_async, CallbackQueryHandler, MessageHandler, DispatcherHandlerStop
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 client = tbot
 
