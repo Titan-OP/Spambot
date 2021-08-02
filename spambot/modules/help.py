@@ -186,7 +186,6 @@ def help(update: Update, context: CallbackContext):
 
 
 @run_async
-@sudo_plus
 def help_menu(update, context):
     query = update.callback_query
     if query.data == "spamcmds":
