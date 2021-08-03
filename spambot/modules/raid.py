@@ -406,35 +406,30 @@ async def _(event):
 @sudo_plus
 @typing_action
 def rraid(update: Update, context: CallbackContext) -> str:
-    message = update.effective_message
-    user = update.effective_user
-    chat = update.effective_chat
-    bot, args = context.bot, context.args
-    user_id = extract_user(message, args)
-    
-    user_member = bot.getChat(user_id)
-    rt = ""
-
-    reply = check_user_id(user_id, bot)
-    if reply:
-        message.reply_text(reply)
-        return ""
-    if user_id in DEV_USERS:
-        message.reply_text("I can't betray @TeamGladiators's crew!!")
-	return ""
-
-    if user_id in SUDO_USERS:
-        message.reply_text("This member is a Sudo user!!")
-        return ""
-
-    chutiya.append(user_id)
-
-    update.effective_message.reply_text(
-        rt
-        + "\nSuccessfully started reply raid on {} !!".format(
-            user_member.first_name
-        )
-    )
+	message = update.effective_message
+	user = update.effective_user
+	chat = update.effective_chat
+	bot, args = context.bot, context.args
+	user_id = extract_user(message, args)
+	user_member = bot.getChat(user_id)
+	rt = ""
+	reply = check_user_id(user_id, bot)
+	if reply:
+		message.reply_text(reply)
+		return ""
+	if user_id in DEV_USERS:
+		message.reply_text("I can't betray @TeamGladiators's crew!!")
+		return ""
+	if user_id in SUDO_USERS:
+		message.reply_text("This member is a Sudo user!!")
+		return ""
+	chutiya.append(user_id)
+	update.effective_message.reply_text(
+		rt
+		+ "\nSuccessfully started reply raid on {} !!".format(
+			user_member.first_name
+		)
+	)
 
 
 
