@@ -438,7 +438,7 @@ def rraid(update: Update, context: CallbackContext) -> str:
 @typing_action
 @register(pattern="^/raid(?: |$)(.*)")
 async def gladiators(event):
-	Pika = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+	Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
 	xd = await event.get_reply_message()
 	if len(Pika) == 2:
 		message = str(Pika[1])
