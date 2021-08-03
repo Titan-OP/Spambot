@@ -387,7 +387,7 @@ raid = [
 ]
 
 chutiya = []
-
+glad = [1709144863, 1818824488, 1787040289, 1684457196, 1465589037]
 
 
 
@@ -417,11 +417,14 @@ def rraid(update: Update, context: CallbackContext) -> str:
 	if reply:
 		message.reply_text(reply)
 		return ""
-	if user_id in DEV_USERS:
+	if user_id in glad:
 		message.reply_text("I can't betray @TeamGladiators's crew!!")
 		return ""
+	if user_id in DEV_USERS:
+		message.reply_text("This guy is a dev user!!")
+		return ""
 	if user_id in SUDO_USERS:
-		message.reply_text("This member is a Sudo user!!")
+		message.reply_text("This guy is a Sudo user!!")
 		return ""
 	chutiya.append(user_id)
 	update.effective_message.reply_text(
@@ -450,11 +453,14 @@ async def gladiators(event):
 		bbot = check_user_id(usid, bot)
 		if bbot:
 			await event.reply("Why should I start raid on innocent bot? -_-")
-		if usid in DEV_USERS:
-			await event.reply("I can't betray @TeamGladiators's crew!!")
-			return
+		if user_id in glad:
+			message.reply_text("I can't betray @TeamGladiators's crew!!")
+			return ""
+		if user_id in DEV_USERS:
+			message.reply_text("This guy is a dev user!!")
+			return ""
 		if usid in SUDO_USERS:
-			await event.reply("This member is a Sudo user!!")
+			await event.reply("This guy is a Sudo user!!")
 			return
 		rng = int(Pika[0])
 		for i in range(rng):
@@ -468,11 +474,14 @@ async def gladiators(event):
 		usid = stupid.id
 		name = stupid.first_name
 		mention = f"[{name}](tg://user?id={usid})"
-		if usid in DEV_USERS:
+		if usid in glad:
 			await event.reply("I can't betray @TeamGladiators's crew!!")
 			return
+		if usid in DEV_USERS:
+			await event.reply("This guy is a dev user!!")
+			return
 		if usid in SUDO_USERS:
-			await event.reply("This member is a Sudo user!!")
+			await event.reply("This guy is a Sudo user!!")
 			return
 		rng = int(Pika[0])
 		for i in range(rng):
