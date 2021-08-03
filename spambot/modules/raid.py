@@ -7,7 +7,7 @@ import os
 from typing import Optional
 from telethon import events
 from telegram import Update, Bot
-
+from spambot.modules.helper_funcs.alternate import typing_action
 
 from spambot import (
     DEV_USERS,
