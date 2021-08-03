@@ -16,8 +16,10 @@ import os
 from asyncio import sleep
 from telethon import utils
 from telethon.tl.functions.messages import GetStickerSetRequest
+from spambot.modules.helper_funcs.alternate import typing_action
 from telethon.tl.types import InputStickerSetID, InputStickerSetShortName
 
+@typing_action
 @register(pattern="^/spam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
@@ -34,7 +36,8 @@ async def gladiators(event):
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
-      
+
+@typing_action
 @register(pattern="^/dspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
@@ -51,6 +54,8 @@ async def gladiators(event):
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
 
+
+@typing_action
 @register(pattern="^/mspam(?: |$)(.*)")
 async def gladiators(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
@@ -67,6 +72,7 @@ async def gladiators(e):
       except Exception as xy:
         await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
+@typing_action
 @register(pattern="^/packspam(?: |$)(.*)")
 async def _(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
@@ -97,7 +103,7 @@ async def _(e):
         await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
         
         
-        
+@typing_action
 @register(pattern="^/bigspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
@@ -114,7 +120,7 @@ async def gladiators(event):
 
 
 
-
+@typing_action
 @register(pattern="^/uspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
