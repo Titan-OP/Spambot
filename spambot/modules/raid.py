@@ -411,19 +411,20 @@ def rraid(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     bot, args = context.bot, context.args
     user_id = extract_user(message, args)
-    if user_id in DEV_USERS:
-        message.reply_text("I can't betray @TeamGladiators's crew!!")
-	return
+    
     user_member = bot.getChat(user_id)
     rt = ""
 
     reply = check_user_id(user_id, bot)
     if reply:
         message.reply_text(reply)
-        return
+        return ""
+    if user_id in DEV_USERS:
+        message.reply_text("I can't betray @TeamGladiators's crew!!")
+	return ""
     if user_id in SUDO_USERS:
         message.reply_text("This member is a Sudo user!!")
-        return
+        return ""
     chutiya.append(user_id)
 
     update.effective_message.reply_text(
