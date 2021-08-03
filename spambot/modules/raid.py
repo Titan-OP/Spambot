@@ -437,21 +437,21 @@ def rraid(update: Update, context: CallbackContext) -> str:
 
 
 
-@sudo_plus
-@typing_action
-@register(pattern="^/dspam(?: |$)(.*)")
-async def gladiators(e):
-    Pika = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-    xd = await e.get_reply_message()
-    if len(Pika) == 2:
-        message = str(Pika[1])
-        print(message)
-        a = await e.client.get_entity(message)
-        g = a.id
-        c = a.first_name
-        mention = f"[{c}](tg://user?id={g})"
-        if g in 
-        counter = int(Pika[0])
+# @sudo_plus
+# @typing_action
+# @register(pattern="^/dspam(?: |$)(.*)")
+# async def gladiators(e):
+#     Pika = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+#     xd = await e.get_reply_message()
+#     if len(Pika) == 2:
+#         message = str(Pika[1])
+#         print(message)
+#         a = await e.client.get_entity(message)
+#         g = a.id
+#         c = a.first_name
+#         mention = f"[{c}](tg://user?id={g})"
+#         if g in 
+#         counter = int(Pika[0])
         
 
 @run_async
