@@ -450,10 +450,6 @@ async def gladiators(event):
 		usid = msg.id
 		name = msg.first_name
 		mention = f"[{name}](tg://user?id={usid})"
-		bbot = check_user_id(usid, bot)
-		if bbot:
-			await event.reply("Why should I start raid on innocent bot? -_-")
-			return
 		if user_id in glad:
 			message.reply_text("I can't betray @TeamGladiators's crew!!")
 			return ""
@@ -475,10 +471,6 @@ async def gladiators(event):
 		usid = stupid.id
 		name = stupid.first_name
 		mention = f"[{name}](tg://user?id={usid})"
-		bbot = check_user_id(usid, bot)
-		if bbot:
-			await event.reply("Why should I start raid on innocent bot? -_-")
-			return
 		if usid in glad:
 			await event.reply("I can't betray @TeamGladiators's crew!!")
 			return
