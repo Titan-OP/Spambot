@@ -32,7 +32,7 @@ async def gladiators(event):
         return await event.reply("Please give value less than or equal to 99.")
       for i in range(counter):
         await event.client.send_message(event.chat, mesg)
-        await asyncio.sleep(1)
+        await asyncio.sleep(1.5)
     except Exception as xy:
       await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
