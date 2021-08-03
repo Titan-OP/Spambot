@@ -445,13 +445,16 @@ async def gladiators(event):
 		print(message)
 		msg = await event.client.get_entity(message)
 		usid = msg.id
-		name = usid.first_name
+		name = msg.first_name
 		mention = f"[{name}](tg://user?id={usid})"
+		bbot = check_user_id(usid, bot)
+		if bbot:
+			await event.reply("Why should I start raid on innocent bot? -_-")
 		if usid in DEV_USERS:
-			message.reply_text("I can't betray @TeamGladiators's crew!!")
+			await event.reply("I can't betray @TeamGladiators's crew!!")
 			return
 		if usid in SUDO_USERS:
-			message.reply_text("This member is a Sudo user!!")
+			await event.reply("This member is a Sudo user!!")
 			return
 		rng = int(Pika[0])
 		for i in range(rng):
@@ -466,10 +469,10 @@ async def gladiators(event):
 		name = stupid.first_name
 		mention = f"[{name}](tg://user?id={usid})"
 		if usid in DEV_USERS:
-			message.reply_text("I can't betray @TeamGladiators's crew!!")
+			await event.reply("I can't betray @TeamGladiators's crew!!")
 			return
 		if usid in SUDO_USERS:
-			message.reply_text("This member is a Sudo user!!")
+			await event.reply("This member is a Sudo user!!")
 			return
 		rng = int(Pika[0])
 		for i in range(rng):
