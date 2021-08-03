@@ -214,13 +214,7 @@ def error_callback(update: Update, context: CallbackContext):
 
 def main():
 
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
-        try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "__Starting Bot...__")
-        except Unauthorized:
-            LOGGER.warning("Bot isnt able to send message to support_chat, go and check!")
-        except BadRequest as e:
-            LOGGER.warning(e.message)
+    
 
     
 
@@ -237,7 +231,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Starting gladiators spambot using long polling.")
+        LOGGER.info("Starting gladiators spambot...")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
