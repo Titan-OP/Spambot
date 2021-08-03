@@ -422,9 +422,11 @@ def rraid(update: Update, context: CallbackContext) -> str:
     if user_id in DEV_USERS:
         message.reply_text("I can't betray @TeamGladiators's crew!!")
 	return ""
+
     if user_id in SUDO_USERS:
         message.reply_text("This member is a Sudo user!!")
         return ""
+
     chutiya.append(user_id)
 
     update.effective_message.reply_text(
