@@ -30,7 +30,7 @@ from spambot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from spambot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CommandHandler, run_async, CallbackQueryHandler, MessageHandler, DispatcherHandlerStop
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-client = tbot
+
 
 
 DEFAULTUSER = str(OWNER_USERNAME)
