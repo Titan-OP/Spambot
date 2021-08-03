@@ -438,73 +438,70 @@ def rraid(update: Update, context: CallbackContext) -> str:
 @typing_action
 @register(pattern="^/raid(?: |$)(.*)")
 async def gladiators(event):
-    Pika = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-    xd = await event.get_reply_message()
-    if len(Pika) == 2:
-        message = str(Pika[1])
-        print(message)
-        msg = await event.client.get_entity(message)
-        usid = msg.id
-        name = usid.first_name
-        mention = f"[{name}](tg://user?id={usid})"
-        if usid in DEV_USERS:
-		message.reply_text("I can't betray @TeamGladiators's crew!!")
-		return
-	if usid in SUDO_USERS:
-		message.reply_text("This member is a Sudo user!!")
-		return
-        rng = int(Pika[0])
-	for i in range(rng):
-		verse = random.choice(raid)
-		text_message = f"{mention} {verse}"
-		await event.client.send_message(event.chat, text_message)
-		await asyncio.sleep(2)
-    elif event.reply_to_msg_id:
-	msg = await event.get_reply_message()
-        stupid = await event.client.get_entity(msg.sender_id)
-	usid = stupid.id
-	name = stupid.first_name
-	mention = f"[{name}](tg://user?id={usid})"
-        if usid in DEV_USERS:
-		message.reply_text("I can't betray @TeamGladiators's crew!!")
-		return
-	if usid in SUDO_USERS:
-		message.reply_text("This member is a Sudo user!!")
-		return
-        rng = int(Pika[0])
-	for i in range(rng):
-		verse = random.choice(raid)
-		text_message = f"{mention} {verse}"
-		await event.client.send_message(event.chat, text_message)
-		await asyncio.sleep(2)
+	Pika = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+	xd = await event.get_reply_message()
+	if len(Pika) == 2:
+		message = str(Pika[1])
+		print(message)
+		msg = await event.client.get_entity(message)
+		usid = msg.id
+		name = usid.first_name
+		mention = f"[{name}](tg://user?id={usid})"
+		if usid in DEV_USERS:
+			message.reply_text("I can't betray @TeamGladiators's crew!!")
+			return
+		if usid in SUDO_USERS:
+			message.reply_text("This member is a Sudo user!!")
+			return
+		rng = int(Pika[0])
+		for i in range(rng):
+			verse = random.choice(raid)
+			text_message = f"{mention} {verse}"
+			await event.client.send_message(event.chat, text_message)
+			await asyncio.sleep(2)
+	elif event.reply_to_msg_id:
+		msg = await event.get_reply_message()
+		stupid = await event.client.get_entity(msg.sender_id)
+		usid = stupid.id
+		name = stupid.first_name
+		mention = f"[{name}](tg://user?id={usid})"
+		if usid in DEV_USERS:
+			message.reply_text("I can't betray @TeamGladiators's crew!!")
+			return
+		if usid in SUDO_USERS:
+			message.reply_text("This member is a Sudo user!!")
+			return
+		rng = int(Pika[0])
+		for i in range(rng):
+			verse = random.choice(raid)
+			text_message = f"{mention} {verse}"
+			await event.client.send_message(event.chat, text_message)
+			await asyncio.sleep(2)
 
 @run_async
 @sudo_plus
 def drraid(update: Update, context: CallbackContext) -> str:
-    message = update.effective_message
-    user = update.effective_user
-    chat = update.effective_chat
-    bot, args = context.bot, context.args
-    user_id = extract_user(message, args)
-    user_member = bot.getChat(user_id)
-    rt = ""
-
-    reply = check_user_id(user_id, bot)
-    if reply:
-        message.reply_text(reply)
-        return ""
-
-    if user_id not in chutiya:
-        message.reply_text("Never started reply raid on this user!!")
-        return ""
-    chutiya.remove(user_id)
-    
-    update.effective_message.reply_text(
-        rt
-        + "\nSuccessfully stopped reply raid on {} !!".format(
-            user_member.first_name
-        )
-    )
+	message = update.effective_message
+	user = update.effective_user
+	chat = update.effective_chat
+	bot, args = context.bot, context.args
+	user_id = extract_user(message, args)
+	user_member = bot.getChat(user_id)
+	rt = ""
+	reply = check_user_id(user_id, bot)
+	if reply:
+		message.reply_text(reply)
+		return ""
+	if user_id not in chutiya:
+		message.reply_text("Never started reply raid on this user!!")
+		return ""
+	chutiya.remove(user_id)
+	update.effective_message.reply_text(
+		rt
+		+ "\nSuccessfully stopped reply raid on {} !!".format(
+			user_member.first_name
+		)
+	)
 
 
     
