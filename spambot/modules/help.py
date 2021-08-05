@@ -1,7 +1,3 @@
-import importlib
-import time
-import re
-from sys import argv
 from spambot.events import register
 from spambot import (
     DEV_USERS,
@@ -9,28 +5,13 @@ from spambot import (
     OWNER_USERNAME,
     SUDO_USERS
 )
-from spambot import (
-    ALLOW_EXCL,
-    CERT_PATH,
-    TOKEN,
-    URL,
-    SUPPORT_CHAT,
-    dispatcher,
-    StartTime,
-    telethn,
-    pbot,
-    updater,
-)
 import asyncio
 import io
 import os
 from asyncio import sleep
 from telethon import utils
-from spambot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from spambot.modules.helper_funcs.extraction import extract_user
-from telegram.ext import CallbackContext, CommandHandler, run_async, CallbackQueryHandler, MessageHandler, DispatcherHandlerStop
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-
+client = tbot
 
 
 DEFAULTUSER = str(OWNER_USERNAME)
@@ -83,8 +64,6 @@ start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
 help_caption = """
 **Hᴇʏ ᴍᴀsᴛᴇʀ,
 ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
-
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 start_caption = f"""
 **Nᴏᴡ ᴍᴇ ᴛᴏ ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍʏsᴇʟғ.
@@ -114,7 +93,7 @@ helpbuttons = [
 
 help_buttons = [
     [
-        InlineKeyboardButton(text="Back", callback_data="back"),
+        InlineKeyboardButton(text="Back", callback_data="back")
         InlineKeyboardButton(text="Close", callback_data="close")
     ]
 ]
@@ -189,37 +168,9 @@ def help(update: Update, context: CallbackContext):
     )
 
 
-# @run_async
-# def help_menu(update, context):
-#     query = update.callback_query
-#     if query.data == "spamcmds":
-#         query.message.edit_text(
-#             text=spam_caption,
-#             reply_markup=InlineKeyboardMarkup(help_buttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-#     if query.data == "devcmds":
-#         query.message.edit_text(
-#             text=dev_caption,
-#             reply_markup=InlineKeyboardMarkup(help_buttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-#     if query.data == "back":
-#         query.message.edit_text(
-#             text=help_caption,
-#             reply_markup=InlineKeyboardMarkup(helpbuttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-#     if query.data == "open":
-#         query.message.edit_text(
-#             text=help_caption,
-#             reply_markup=InlineKeyboardMarkup(openbuttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-    
-    
-    
+
 @run_async
+@sudo_plus
 def help_menu(update, context):
     query = update.callback_query
     spam_cmd = re.match(r"spamcmds\((.+?)\)", query.data)
@@ -258,11 +209,8 @@ def help_menu(update, context):
                 reply_markup=InlineKeyboardMarkup(helpbuttons),
                 parse_mode=ParseMode.MARKDOWN,
             )
-    except Exception as xy:
-        query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
            
-
 start_handler = CommandHandler("start", start)
 help_handler = CommandHandler("help", help)
 callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
