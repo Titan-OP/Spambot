@@ -451,10 +451,10 @@ async def gladiators(event):
 		name = msg.first_name
 		mention = f"[{name}](tg://user?id={usid})"
 		if usid in glad:
-			message.reply_text("I can't betray @TeamGladiators's crew!!")
+			event.reply("I can't betray @TeamGladiators's crew!!")
 			return ""
 		if usid in DEV_USERS:
-			message.reply_text("This guy is a dev user!!")
+			event.reply("This guy is a dev user!!")
 			return ""
 		if usid in SUDO_USERS:
 			await event.reply("This guy is a Sudo user!!")
