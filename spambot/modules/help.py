@@ -92,7 +92,7 @@ helpbuttons = [
 help_buttons = [
     [
         InlineKeyboardButton(text="Back", callback_data="back"),
-        InlineKeyboardButton(text="Back", callback_data="back")
+        InlineKeyboardButton(text="Back", callback_data="back"),
         InlineKeyboardButton(text="Close", callback_data="close")
     ]
 ]
