@@ -67,12 +67,7 @@
          "required": false,
          "value": ""
       },
-     "EVENT_LOGS": {
-         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
-         "required": true,
-         "value": "-100"
-      },
-      "JOIN_LOGGER": {
+      "LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
          "value": "-100"
