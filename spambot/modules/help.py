@@ -134,10 +134,7 @@ def help(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN,
         timeout=60,
     )
-@run_async
-@sudo_plus
-def spamcmds(update, context):
-    
+
 
 @run_async
 @sudo_plus
