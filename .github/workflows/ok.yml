@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "pyrogramee"
+          find: "register"
 
-          replace: "pyrogram"
+          replace: "gladiator"
 
       - name: Create Pull Request
 
