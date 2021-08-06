@@ -114,27 +114,7 @@ openbuttons = [
         InlineKeyboardButton(text="Open Again", callback_data="open")
     ]
 ]
-# @gladiator(pattern="^/start(?: |$)(.*)")
-# async def gladiators(event):
-#  if "-" not in str(event.chat_id):
-#    try:
-#        await event.client.send_file(event.chat_id, start_img, caption=f"Now let me introduce myself.\nI am most powerfull spam-bot ever made\nI'm here to destroy your opponent!!\nI can spam continuosly with less flood-wait error and more accuracy!\n\n_↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_\n**『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**\n\n©️ @TeamGladiators")
-#    except:
-#        await event.client.send_message(event.chat_id, f"Now let me introduce myself.\nI am most powerfull spam-bot ever made\nI'm here to destroy your opponent!!\nI can spam continuosly with less flood-wait error and more accuracy!\n\n_↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_\n**『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**\n\n©️ @TeamGladiators")
-# @gladiator(pattern="^/help(?: |$)(.*)")
-# async def gladiators(event):
-#   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
-#     if "-" in str(event.chat_id):
-#         try:
-#             await event.reply(help_img, caption=f"**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
-#         except:
-#             await event.reply(f"**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
-#     else:
-#         try:
-#             await event.client.send_file(event.chat_id, help_img, caption="**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
-#         except:
-#             await event.client.send_message(event.chat_id, "**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**\n\n**/addsudo:** use this while replying to anyone will add him as a sudo user!!\n\n**/rmsudo:** use this while replying to anyone will remove him from sudo user!!\n\n**/spam:** Spams text for given counter!!\nSyntax: /spam <counter>;<text>\n\n**/bigspam:** Spams text for given counter!!\nSyntax: /bigspam <counter>;<text>\n\n**/dspam:** Delay spam a text for given counter after given time!!\nSyntax: /dspam <seconds>;<counter>;<text>\n\n**/mspam:** Spams media for given counter!!\nSyntax: /mspam <counter>\n(replying to any media)\n\n**/packspam:** Spams all stickers from sticker pack!!\nSyntax: /packspam\n(replying to any sticker)\n\n**/replyraid:** Activates reply raid on the user!!\nSyntax: /replyraid\n(replying to anyone)\n\n**/dreplyraid:** Deactivates reply raid on the user!!\nSyntax: /dreplyraid\n(replying to anyone)\n\n©️ @TeamGladiators")
-    
+   
 @run_async
 def start(update: Update, context: CallbackContext):
     if update.effective_chat.type != "private":
@@ -145,44 +125,48 @@ def start(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN,
         timeout=60,
     )
-# @run_async
-# @sudo_plus
-# def help(update: Update, context: CallbackContext):
-#     update.effective_message.reply_text(
-#         help_caption,
-#         reply_markup=InlineKeyboardMarkup(helpbuttons),
-#         parse_mode=ParseMode.MARKDOWN,
-#         timeout=60,
-#     )
+@run_async
+@sudo_plus
+def help(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(
+        help_caption,
+        reply_markup=InlineKeyboardMarkup(helpbuttons),
+        parse_mode=ParseMode.MARKDOWN,
+        timeout=60,
+    )
+@run_async
+@sudo_plus
+def spamcmds(update, context):
+    
 
-
-# @run_async
-# def help_menu(update, context):
-#     query = update.callback_query
-#     if query.data == "spamcmds":
-#         query.message.edit_text(
-#             text=spam_caption,
-#             reply_markup=InlineKeyboardMarkup(help_buttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-#     if query.data == "devcmds":
-#         query.message.edit_text(
-#             text=dev_caption,
-#             reply_markup=InlineKeyboardMarkup(help_buttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-#     if query.data == "back":
-#         query.message.edit_text(
-#             text=help_caption,
-#             reply_markup=InlineKeyboardMarkup(helpbuttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
-#     if query.data == "open":
-#         query.message.edit_text(
-#             text=help_caption,
-#             reply_markup=InlineKeyboardMarkup(openbuttons),
-#             parse_mode=ParseMode.MARKDOWN,
-#         )
+@run_async
+@sudo_plus
+def help_menu(update, context):
+    query = update.callback_query
+    if query.data == "spamcmds":
+        query.message.edit_text(
+            text=spam_caption,
+            reply_markup=InlineKeyboardMarkup(help_buttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "devcmds":
+        query.message.edit_text(
+            text=dev_caption,
+            reply_markup=InlineKeyboardMarkup(help_buttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "back":
+        query.message.edit_text(
+            text=help_caption,
+            reply_markup=InlineKeyboardMarkup(helpbuttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "open":
+        query.message.edit_text(
+            text=help_caption,
+            reply_markup=InlineKeyboardMarkup(openbuttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
 
 
 
@@ -233,8 +217,14 @@ def start(update: Update, context: CallbackContext):
 
 
 start_handler = CommandHandler("start", start)
-# help_handler = CommandHandler("help", help)
-# callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
+help_handler = CommandHandler("help", help)
+spamcmds_handler = CallbackQueryHandler(help_menu, pattern="spamcmds")
+devcmds_handler = CallbackQueryHandler(help_menu, pattern="devcmds")
+back_handler = CallbackQueryHandler(help_menu, pattern="back")
+open_handler = CallbackQueryHandler(help_menu, pattern="open")
 dispatcher.add_handler(start_handler)
-# dispatcher.add_handler(help_handler)
-# dispatcher.add_handler(callback_handler)
+dispatcher.add_handler(help_handler)
+dispatcher.add_handler(open)
+dispatcher.add_handler(spamcmds)
+dispatcher.add_handler(devcmds)
+dispatcher.add_handler(back)
