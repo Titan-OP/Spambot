@@ -14,7 +14,6 @@ from spambot import (
     CERT_PATH,
     TOKEN,
     URL,
-    SUPPORT_CHAT,
     dispatcher,
     StartTime,
     telethn,
