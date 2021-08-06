@@ -1,4 +1,7 @@
+#Credits to @Pika_Pika_Pikachuuu
 #Credits to @TeamGladiators
+#Credits to Yukki for curses
+
 
 import re
 import asyncio
@@ -266,7 +269,7 @@ replies = [
     "TERI SEXY BAHEN KI CHUT OP",
 ]
 
-raid = [
+curses = [
     "Pehle main tereko chakna dega, fir daru pilayega, fir jab aap dimag se nahi L*nd se sochoge, tab bolega..",
     "तेरी छोटी बहन साली कुतिया की चिकनी चिकनी बिना बाल वाली चूत के चिथड़े उड़ा डालूंगा अपने 9 इंच लंबे लंड से , समझा बेटीचोद साले बहन के लौड़े** \n\nतेरा बाप हूं मैं मादरचोद साले gandu , तू मेरी नाजायज औलाद है , जा जाके पूछ अपनी मम्मी साली रंडी से \n\nतेरी अप्पी बता रही थी कि तू बहुत बड़ा मादर चोद है, तूने ही अपनी अम्मी को चोद कर अपनी अप्पी पैदा की, और तू बहुत बड़ा गांडू भी है, कितने रेट है तेरे गाड़ मरवाने के ??\nतेरी मां की चूत को पिकाचू और ग्लेडिएटर्स हमेशा पेलते हैं।\nऔर ये भी बता कि गाड़ मरवाता है, कंडोम लगा के या बिना कण्डोम के ? तेल लेकर तू आएगा या मैं ही जापानी तेल लेकर आउ ?",
     "Teri ammy ke sath mai role play karunga🤣🤣🤣🤣🤣🤣usko malik ki wife banaunga aur khud driver banke pelunga usko!",
@@ -405,7 +408,7 @@ async def _(event):
 @run_async
 @sudo_plus
 @typing_action
-def rraid(update: Update, context: CallbackContext) -> str:
+def replycurse(update: Update, context: CallbackContext) -> str:
 	message = update.effective_message
 	user = update.effective_user
 	chat = update.effective_chat
@@ -429,7 +432,7 @@ def rraid(update: Update, context: CallbackContext) -> str:
 	chutiya.append(user_id)
 	update.effective_message.reply_text(
 		rt
-		+ "\nSuccessfully started reply raid on {} !!".format(
+		+ "\nSuccessfully started reply and curse on {} !!".format(
 			user_member.first_name
 		)
 	)
@@ -439,7 +442,7 @@ def rraid(update: Update, context: CallbackContext) -> str:
 
 @sudo_plus
 @typing_action
-@gladiator(pattern="^/raid(?: |$)(.*)")
+@gladiator(pattern="^/curse(?: |$)(.*)")
 async def gladiators(event):
 	Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
 	xd = await event.get_reply_message()
@@ -461,7 +464,7 @@ async def gladiators(event):
 			return
 		rng = int(Pika[0])
 		for i in range(rng):
-			verse = random.choice(raid)
+			verse = random.choice(curses)
 			text_message = f"{mention} {verse}"
 			await event.client.send_message(event.chat, text_message)
 			await asyncio.sleep(2)
@@ -489,7 +492,7 @@ async def gladiators(event):
 
 @run_async
 @sudo_plus
-def drraid(update: Update, context: CallbackContext) -> str:
+def dreplycurse(update: Update, context: CallbackContext) -> str:
 	message = update.effective_message
 	user = update.effective_user
 	chat = update.effective_chat
@@ -502,12 +505,12 @@ def drraid(update: Update, context: CallbackContext) -> str:
 		message.reply_text(reply)
 		return ""
 	if user_id not in chutiya:
-		message.reply_text("Never started reply raid on this user!!")
+		message.reply_text("Never started reply and curse on this user!!")
 		return ""
 	chutiya.remove(user_id)
 	update.effective_message.reply_text(
 		rt
-		+ "\nSuccessfully stopped reply raid on {} !!".format(
+		+ "\nSuccessfully stopped reply and curse on {} !!".format(
 			user_member.first_name
 		)
 	)
@@ -517,13 +520,13 @@ def drraid(update: Update, context: CallbackContext) -> str:
 
 
 
-RAID_HANDLER = CommandHandler(("replyraid"), rraid)
-DRAID_HANDLER = CommandHandler(("dreplyraid"), drraid)
+CURSE_HANDLER = CommandHandler(("replycurse"), replycurse)
+DCURSE_HANDLER = CommandHandler(("dreplycurse"), dreplycurse)
 
-dispatcher.add_handler(RAID_HANDLER)
-dispatcher.add_handler(DRAID_HANDLER)
+dispatcher.add_handler(CURSE_HANDLER)
+dispatcher.add_handler(DCURSE_HANDLER)
 
-__mod_name__ = "raid"
+__mod_name__ = "curse"
 __handlers__ = [
     RAID_HANDLER,
     DRAID_HANDLER,
