@@ -363,6 +363,10 @@ def main():
 
     
 
+    help_handler = CommandHandler("help", help)
+    callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
+    dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(callback_handler)
 
     dispatcher.add_error_handler(error_callback)
 
