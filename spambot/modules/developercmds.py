@@ -96,8 +96,10 @@ LEAVE_HANDLER = CommandHandler("leave", leave)
 UPDATE_HANDLER = CommandHandler("updates", renovate)
 RESTART_HANDLER = CommandHandler("restart", restart)
 
+PING_HANDLER = CommandHandler("ping", ping)
 
 dispatcher.add_handler(LEAVE_HANDLER)
+dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(UPDATE_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
