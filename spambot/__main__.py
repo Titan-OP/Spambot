@@ -47,7 +47,6 @@ from spambot import (
     LOGS,
     OWNER_ID,
     PORT,
-    SUPPORT_CHAT,
     TOKEN,
     URL,
     WEBHOOK,
