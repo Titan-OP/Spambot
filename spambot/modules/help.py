@@ -91,7 +91,6 @@ helpbuttons = [
 help_buttons = [
     [
         InlineKeyboardButton(text="Back", callback_data="back"),
-        InlineKeyboardButton(text="Back", callback_data="back"),
         InlineKeyboardButton(text="Close", callback_data="close")
     ]
 ]
@@ -161,10 +160,15 @@ def help_menu(update, context):
     if query.data == "open":
         query.message.edit_text(
             text=help_caption,
+            reply_markup=InlineKeyboardMarkup(helpbuttons),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    if query.data == "close":
+        query.message.edit_text(
+            text=close_caption,
             reply_markup=InlineKeyboardMarkup(openbuttons),
             parse_mode=ParseMode.MARKDOWN,
         )
-
 
 
 
@@ -219,9 +223,11 @@ spamcmds_handler = CallbackQueryHandler(help_menu, pattern="spamcmds")
 devcmds_handler = CallbackQueryHandler(help_menu, pattern="devcmds")
 back_handler = CallbackQueryHandler(help_menu, pattern="back")
 open_handler = CallbackQueryHandler(help_menu, pattern="open")
+close_handler = CallbackQueryHandler(help_menu, pattern="close")
 dispatcher.add_handler(start_handler)
 dispatcher.add_handler(help_handler)
 dispatcher.add_handler(open_handler)
+dispatcher.add_handler(close_handler)
 dispatcher.add_handler(spamcmds_handler)
 dispatcher.add_handler(devcmds_handler)
 dispatcher.add_handler(back_handler)
