@@ -528,7 +528,7 @@ dispatcher.add_handler(DCURSE_HANDLER)
 
 __mod_name__ = "curse"
 __handlers__ = [
-    RAID_HANDLER,
-    DRAID_HANDLER,
+    CURSE_HANDLER,
+    DCURSE_HANDLER,
     
 ]
