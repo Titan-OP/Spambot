@@ -1,7 +1,7 @@
 import os
 import subprocess
 import sys
-
+from datetime import datetime
 from contextlib import suppress
 from time import sleep
 
@@ -31,7 +31,15 @@ def restart(update: Update, context: CallbackContext):
     os.execl(sys.executable, *args)
     
 
-
+@run_async
+@sudo_plus
+def ping(update: Update, context: CallbackContext):
+    ping_start = datetime.now()
+    update.effective_message.reply_text("ᑭOᑎᘜ!!")
+    ping_end = datetime.now()
+    ms = (ping_end-ping_start).microseconds / 1000
+    update.effective_message.edit_text(f"⚔️Pᴏɴɢ⚔️\n`{ms}` ᴍs")
+    
 
 
 @run_async
