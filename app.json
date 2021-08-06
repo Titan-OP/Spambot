@@ -67,7 +67,7 @@
          "required": false,
          "value": ""
       },
-      "LOGGER": {
+      "LOGS": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
          "value": "-100"
