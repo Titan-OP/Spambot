@@ -45,6 +45,7 @@ from spambot import (
     CERT_PATH,
     DONATION_LINK,
     LOGS,
+    LOGGER,
     OWNER_ID,
     PORT,
     TOKEN,
