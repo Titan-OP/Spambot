@@ -234,8 +234,8 @@ def start(update: Update, context: CallbackContext):
 
 
 start_handler = CommandHandler("start", start)
-help_handler = CommandHandler("help", help)
-callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
+# help_handler = CommandHandler("help", help)
+# callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
 dispatcher.add_handler(start_handler)
-dispatcher.add_handler(help_handler)
-dispatcher.add_handler(callback_handler)
+# dispatcher.add_handler(help_handler)
+# dispatcher.add_handler(callback_handler)
