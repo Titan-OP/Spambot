@@ -38,7 +38,8 @@ def ping(update: Update, context: CallbackContext):
     update.effective_message.reply_text("ᑭOᑎᘜ!!")
     ping_end = datetime.now()
     ms = (ping_end-ping_start).microseconds / 1000
-    update.effective_message.edit_text(f"⚔️Pᴏɴɢ⚔️\n`{ms}` ᴍs")
+    query = update.callback_query
+    query.edit_text(f"⚔️Pᴏɴɢ⚔️\n`{ms}` ᴍs")
     
 
 
