@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "hackerbot"
+          find: "pyrogramee"
 
-          replace: "spambot"
+          replace: "pyrogram"
 
       - name: Create Pull Request
 
