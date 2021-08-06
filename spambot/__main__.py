@@ -1,33 +1,3 @@
-"""
-DONT CHANGE ANYTHING IN THIS ITS MISTAKE!! 
-CHANGING ANYTHING WILL DAMAGE THE BOT!!
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import importlib
 import time
 import re
@@ -84,78 +54,78 @@ from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
 
-DEFAULTUSER = str(OWNER_USERNAME)
+# DEFAULTUSER = str(OWNER_USERNAME)
 
-help_img = "https://telegra.ph/file/6e92103071aa47ee7023e.mp4"
-dev_caption = """
-**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
-**/addsudo:** Use this while replying to anyone will add him as a sudo user!!
-**/rmsudo:** Use this while replying to anyone will remove him from sudo user!!
-**/leave <chat id>:** Bot will leave that chat!!
-**/updates:** Check new updates and updates the bot!!
-**/restart:** Restarts the bot!!(Too fast!! **Supersonic**)
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
-"""
-spam_caption = """
-**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
-**/spam:** Spams text for given counter!!\nSyntax: /spam <counter> <text>
-**/dspam:** Delay spam a text for given counter after given time!!
-Syntax: /dspam <seconds> <counter> <text>
-**/mspam:** Spams media for given counter!!
-Syntax: /mspam <counter>
-(replying to any media)
-**/packspam:** Spams all stickers from sticker pack!!
-Syntax: /packspam (replying to any sticker)
-**/replyraid:** Activates reply raid on the user!!
-Syntax: /replyraid (replying to anyone)
-**/dreplyraid:** Deactivates reply raid on the user!!
-Syntax: /dreplyraid (replying to anyone)
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
-"""
-start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
-help_caption = """
-**Hᴇʏ ᴍᴀsᴛᴇʀ,
-ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
-"""
+# help_img = "https://telegra.ph/file/6e92103071aa47ee7023e.mp4"
+# dev_caption = """
+# **░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
+# **/addsudo:** Use this while replying to anyone will add him as a sudo user!!
+# **/rmsudo:** Use this while replying to anyone will remove him from sudo user!!
+# **/leave <chat id>:** Bot will leave that chat!!
+# **/updates:** Check new updates and updates the bot!!
+# **/restart:** Restarts the bot!!(Too fast!! **Supersonic**)
+# [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+# """
+# spam_caption = """
+# **░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
+# **/spam:** Spams text for given counter!!\nSyntax: /spam <counter> <text>
+# **/dspam:** Delay spam a text for given counter after given time!!
+# Syntax: /dspam <seconds> <counter> <text>
+# **/mspam:** Spams media for given counter!!
+# Syntax: /mspam <counter>
+# (replying to any media)
+# **/packspam:** Spams all stickers from sticker pack!!
+# Syntax: /packspam (replying to any sticker)
+# **/replyraid:** Activates reply raid on the user!!
+# Syntax: /replyraid (replying to anyone)
+# **/dreplyraid:** Deactivates reply raid on the user!!
+# Syntax: /dreplyraid (replying to anyone)
+# [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+# """
+# start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
+# help_caption = """
+# **Hᴇʏ ᴍᴀsᴛᴇʀ,
+# ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
+# [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+# """
 
 
-helpbuttons = [
-    [
-        InlineKeyboardButton(text="Spam Cmds", callback_data="spamcmds"),
-        InlineKeyboardButton(text="Dev Cmds", callback_data="devcmds")
-    ],
-    [
-        InlineKeyboardButton(text="Close", callback_data="close")
-    ]
-]
+# helpbuttons = [
+#     [
+#         InlineKeyboardButton(text="Spam Cmds", callback_data="spamcmds"),
+#         InlineKeyboardButton(text="Dev Cmds", callback_data="devcmds")
+#     ],
+#     [
+#         InlineKeyboardButton(text="Close", callback_data="close")
+#     ]
+# ]
 
-help_buttons = [
-    [
-        InlineKeyboardButton(text="Back", callback_data="back"),
-        InlineKeyboardButton(text="Back", callback_data="back"),
-        InlineKeyboardButton(text="Close", callback_data="close")
-    ]
-]
-startbuttons = [
-    [
-        InlineKeyboardButton(
-            text="Repo", url="https://github.com/Gladiators-Projects/SpamBot"),
-        InlineKeyboardButton(
-            text="Support", url=f"https://t.me/Gladiators_Support"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Github Organisation", url="https://github.com/Gladiators-Projects"),
-    ]
-]
+# help_buttons = [
+#     [
+#         InlineKeyboardButton(text="Back", callback_data="back"),
+#         InlineKeyboardButton(text="Back", callback_data="back"),
+#         InlineKeyboardButton(text="Close", callback_data="close")
+#     ]
+# ]
+# startbuttons = [
+#     [
+#         InlineKeyboardButton(
+#             text="Repo", url="https://github.com/Gladiators-Projects/SpamBot"),
+#         InlineKeyboardButton(
+#             text="Support", url=f"https://t.me/Gladiators_Support"
+#         ),
+#     ],
+#     [
+#         InlineKeyboardButton(
+#             text="Github Organisation", url="https://github.com/Gladiators-Projects"),
+#     ]
+# ]
   
-openbuttons = [
-    [
-        InlineKeyboardButton(text="Open Again", callback_data="open")
-    ]
-]
+# openbuttons = [
+#     [
+#         InlineKeyboardButton(text="Open Again", callback_data="open")
+#     ]
+# ]
 
 
 
@@ -302,59 +272,59 @@ def start(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN,
         timeout=60,
     )
-@run_async
-@sudo_plus
-def help(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(
-        help_caption,
-        reply_markup=InlineKeyboardMarkup(helpbuttons),
-        parse_mode=ParseMode.MARKDOWN,
-        timeout=60,
-    )
+# @run_async
+# @sudo_plus
+# def help(update: Update, context: CallbackContext):
+#     update.effective_message.reply_text(
+#         help_caption,
+#         reply_markup=InlineKeyboardMarkup(helpbuttons),
+#         parse_mode=ParseMode.MARKDOWN,
+#         timeout=60,
+#     )
 
 
-@run_async
-@sudo_plus
-def help_menu(update, context):
-    query = update.callback_query
-    spam_cmd = re.match(r"spamcmds\((.+?)\)", query.data)
-    dev_cmd = re.match(r"devcmds\((.+?)\)", query.data)
-    back_cmd = re.match(r"back\((.+?)\)", query.data)
-    open_cmd = re.match(r"open\((.+?)\)", query.data)
-    close_cmd = re.match(r"close\((.+?)\)", query.data)
-    try:
-        if spam_cmd:
-            query.message.edit_text(
-                text=spam_caption,
-                reply_markup=InlineKeyboardMarkup(help_buttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif dev_cmd:
-            query.message.edit_text(
-                text=dev_caption,
-                reply_markup=InlineKeyboardMarkup(help_buttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif back_cmd:
-            query.message.edit_text(
-                text=help_caption,
-                reply_markup=InlineKeyboardMarkup(helpbuttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif close_cmd:
-            query.message.edit_text(
-                text=close_caption,
-                reply_markup=InlineKeyboardMarkup(openbuttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-        elif open_cmd:
-            query.message.edit_text(
-                text=help_caption,
-                reply_markup=InlineKeyboardMarkup(helpbuttons),
-                parse_mode=ParseMode.MARKDOWN,
-            )
-    except Exception as xy:
-        query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+# @run_async
+# @sudo_plus
+# def help_menu(update, context):
+#     query = update.callback_query
+#     spam_cmd = re.match(r"spamcmds\((.+?)\)", query.data)
+#     dev_cmd = re.match(r"devcmds\((.+?)\)", query.data)
+#     back_cmd = re.match(r"back\((.+?)\)", query.data)
+#     open_cmd = re.match(r"open\((.+?)\)", query.data)
+#     close_cmd = re.match(r"close\((.+?)\)", query.data)
+#     try:
+#         if spam_cmd:
+#             query.message.edit_text(
+#                 text=spam_caption,
+#                 reply_markup=InlineKeyboardMarkup(help_buttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif dev_cmd:
+#             query.message.edit_text(
+#                 text=dev_caption,
+#                 reply_markup=InlineKeyboardMarkup(help_buttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif back_cmd:
+#             query.message.edit_text(
+#                 text=help_caption,
+#                 reply_markup=InlineKeyboardMarkup(helpbuttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif close_cmd:
+#             query.message.edit_text(
+#                 text=close_caption,
+#                 reply_markup=InlineKeyboardMarkup(openbuttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#         elif open_cmd:
+#             query.message.edit_text(
+#                 text=help_caption,
+#                 reply_markup=InlineKeyboardMarkup(helpbuttons),
+#                 parse_mode=ParseMode.MARKDOWN,
+#             )
+#     except Exception as xy:
+#         query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
 def main():
 
@@ -362,10 +332,10 @@ def main():
 
     
 
-    help_handler = CommandHandler("help", help)
-    callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
-    dispatcher.add_handler(help_handler)
-    dispatcher.add_handler(callback_handler)
+#     help_handler = CommandHandler("help", help)
+#     callback_handler = CallbackQueryHandler(help_menu, pattern=r"help_.*")
+#     dispatcher.add_handler(help_handler)
+#     dispatcher.add_handler(callback_handler)
 
     dispatcher.add_error_handler(error_callback)
 
