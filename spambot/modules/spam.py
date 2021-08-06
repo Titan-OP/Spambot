@@ -4,7 +4,7 @@ Credits to:
   t.me/TeamUltroid
 """
 
-from spambot.events import register
+from spambot.events import gladiator
 from spambot import (
     DEV_USERS,
     OWNER_ID,
@@ -20,7 +20,7 @@ from spambot.modules.helper_funcs.alternate import typing_action
 from telethon.tl.types import InputStickerSetID, InputStickerSetShortName
 
 @typing_action
-@register(pattern="^/spam(?: |$)(.*)")
+@gladiator(pattern="^/spam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -38,7 +38,7 @@ async def gladiators(event):
 
 
 @typing_action
-@register(pattern="^/dspam(?: |$)(.*)")
+@gladiator(pattern="^/dspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -56,7 +56,7 @@ async def gladiators(event):
 
 
 @typing_action
-@register(pattern="^/mspam(?: |$)(.*)")
+@gladiator(pattern="^/mspam(?: |$)(.*)")
 async def gladiators(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
       try:
@@ -73,7 +73,7 @@ async def gladiators(e):
         await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
 @typing_action
-@register(pattern="^/packspam(?: |$)(.*)")
+@gladiator(pattern="^/packspam(?: |$)(.*)")
 async def _(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
       try:
@@ -104,7 +104,7 @@ async def _(e):
         
         
 @typing_action
-@register(pattern="^/bigspam(?: |$)(.*)")
+@gladiator(pattern="^/bigspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -121,7 +121,7 @@ async def gladiators(event):
 
 
 @typing_action
-@register(pattern="^/uspam(?: |$)(.*)")
+@gladiator(pattern="^/uspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:

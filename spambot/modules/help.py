@@ -2,7 +2,7 @@ import importlib
 import time
 import re
 from sys import argv
-from spambot.events import register
+from spambot.events import gladiator
 from spambot import (
     DEV_USERS,
     OWNER_ID,
@@ -115,14 +115,14 @@ openbuttons = [
         InlineKeyboardButton(text="Open Again", callback_data="open")
     ]
 ]
-# @register(pattern="^/start(?: |$)(.*)")
+# @gladiator(pattern="^/start(?: |$)(.*)")
 # async def gladiators(event):
 #  if "-" not in str(event.chat_id):
 #    try:
 #        await event.client.send_file(event.chat_id, start_img, caption=f"Now let me introduce myself.\nI am most powerfull spam-bot ever made\nI'm here to destroy your opponent!!\nI can spam continuosly with less flood-wait error and more accuracy!\n\n_↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_\n**『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**\n\n©️ @TeamGladiators")
 #    except:
 #        await event.client.send_message(event.chat_id, f"Now let me introduce myself.\nI am most powerfull spam-bot ever made\nI'm here to destroy your opponent!!\nI can spam continuosly with less flood-wait error and more accuracy!\n\n_↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_\n**『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**\n\n©️ @TeamGladiators")
-# @register(pattern="^/help(?: |$)(.*)")
+# @gladiator(pattern="^/help(?: |$)(.*)")
 # async def gladiators(event):
 #   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
 #     if "-" in str(event.chat_id):

@@ -1,5 +1,5 @@
 from spambot import telethn as tbot
-from spambot.events import register
+from spambot.events import gladiator
 import os
 import asyncio
 import os
@@ -21,7 +21,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-@register(pattern="^/rpg")
+@gladiator(pattern="^/rpg")
 async def install(event):
     if event.fwd_from:
         return

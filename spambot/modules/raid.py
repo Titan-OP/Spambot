@@ -23,7 +23,7 @@ from spambot.modules.helper_funcs.filters import CustomFilters
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async, MessageHandler
 from telegram.utils.helpers import mention_html
-from spambot.events import register
+from spambot.events import gladiator
 from spambot import telethn as tbot
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -439,7 +439,7 @@ def rraid(update: Update, context: CallbackContext) -> str:
 
 @sudo_plus
 @typing_action
-@register(pattern="^/raid(?: |$)(.*)")
+@gladiator(pattern="^/raid(?: |$)(.*)")
 async def gladiators(event):
 	Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
 	xd = await event.get_reply_message()

@@ -6,13 +6,13 @@ import heroku3
 import requests
 
 from spambot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from spambot.events import register
+from spambot.events import gladiator
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
 
 
-@register(pattern="^/(set|see|del) var(?: |$)(.*)(?: |$)([\s\S]*)")
+@gladiator(pattern="^/(set|see|del) var(?: |$)(.*)(?: |$)([\s\S]*)")
 async def variable(var):
     if var.fwd_from:
         return
@@ -101,7 +101,7 @@ async def variable(var):
             return await m.edit(f"**{variable}**  `is not exists`")
 
 
-@register(pattern="^/usage(?: |$)")
+@gladiator(pattern="^/usage(?: |$)")
 async def dyno_usage(dyno):
     if dyno.fwd_from:
         return
@@ -168,7 +168,7 @@ async def dyno_usage(dyno):
     )
 
 
-@register(pattern="^/logs$")
+@gladiator(pattern="^/logs$")
 async def _(dyno):
     if dyno.fwd_from:
         return
