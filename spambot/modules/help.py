@@ -36,7 +36,8 @@ client = tbot
 DEFAULTUSER = str(OWNER_USERNAME)
 help_img = "https://telegra.ph/file/6e92103071aa47ee7023e.mp4"
 dev_caption = """
-**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
+**ıllıllı★ 𝙷𝚎𝚕𝚙 𝙼𝚎𝚗𝚞 ★ıllıllı**
+
 **/addsudo:** Use this while replying to anyone will add him as a sudo user!!
 **/rmsudo:** Use this while replying to anyone will remove him from sudo user!!
 **/leave <chat id>:** Bot will leave that chat!!
@@ -45,7 +46,8 @@ dev_caption = """
 [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 spam_caption = """
-**░░░▒▒▓ᏂᏋᏝᎮ ᎷᏋᏁᏬ▓▒▒░░░**
+**ıllıllı★ 𝙷𝚎𝚕𝚙 𝙼𝚎𝚗𝚞 ★ıllıllı**
+
 **/spam:** Spams text for given counter!!\nSyntax: /spam <counter> <text>
 **/dspam:** Delay spam a text for given counter after given time!!
 Syntax: /dspam <seconds> <counter> <text>
