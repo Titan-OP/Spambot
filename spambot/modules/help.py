@@ -43,12 +43,14 @@ dev_caption = """
 **/leave <chat id>:** Bot will leave that chat!!
 **/updates:** Check new updates and updates the bot!!
 **/restart:** Restarts the bot!!(Too fast!! **Supersonic**)
+
 [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 spam_caption = """
 **ıllıllı★ 𝙷𝚎𝚕𝚙 𝙼𝚎𝚗𝚞 ★ıllıllı**
 
 **/spam:** Spams text for given counter!!\nSyntax: /spam <counter> <text>
+**/uspam:** Spams text continuosly!!\nSyntax: /uspam <text>
 **/dspam:** Delay spam a text for given counter after given time!!
 Syntax: /dspam <seconds> <counter> <text>
 **/mspam:** Spams media for given counter!!
@@ -56,16 +58,18 @@ Syntax: /mspam <counter>
 (replying to any media)
 **/packspam:** Spams all stickers from sticker pack!!
 Syntax: /packspam (replying to any sticker)
-**/replyraid:** Activates reply raid on the user!!
-Syntax: /replyraid (replying to anyone)
-**/dreplyraid:** Deactivates reply raid on the user!!
-Syntax: /dreplyraid (replying to anyone)
+**/replycurse:** Activates reply and curse on the user!!
+Syntax: /replycurse (replying to anyone)
+**/dreplycurse:** Deactivates reply and curse on the user!!
+Syntax: /dreplycurse (replying to anyone)
+
 [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
 help_caption = """
 **Hᴇʏ ᴍᴀsᴛᴇʀ,
 ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
+
 [©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
 """
 start_caption = f"""
@@ -75,10 +79,13 @@ I'ᴍ ʜᴇʀᴇ ᴛᴏ ᴅᴇsᴛʀᴏʏ ʏᴏᴜʀ ᴏᴘᴘᴏɴᴇɴᴛ 🔥
 I ᴄᴀɴ sᴘᴀᴍ ᴄᴏɴᴛɪɴᴜᴏsʟʏ ᴡɪᴛʜ ʟᴇss ғʟᴏᴏᴅ-ᴡᴀɪᴛ ᴇʀʀᴏʀ ᴀɴᴅ ᴡɪᴛʜ ᴍᴏʀᴇ ᴀᴄᴄᴜʀᴀᴄʏ!**
 _↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_
 **『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**
+
 ©️ @TeamGladiators
 """
 close_caption = """
 **Hᴇʟᴘ ᴍᴇɴᴜ ʜᴀs ʙᴇᴇɴ ᴄʟᴏsᴇᴅ!!**
+
+©️ @TeamGladiators
 """
 helpbuttons = [
     [
