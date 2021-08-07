@@ -37,7 +37,7 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     LOGS = os.environ.get("LOGS", None)
-    MASTER_NAME = os.environ.get("OWNER_USERNAME", None)
+    MASTER_NAME = os.environ.get("MASTER_NAME", None)
 
     try:
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
