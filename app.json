@@ -60,6 +60,7 @@
       },
       "MASTER_NAME": {
          "description": "The name which will be printed as the master's name!!",
+         "required": true,
          "value": ""
       },
      "MONGO_DB_URI": {
