@@ -6,7 +6,6 @@ from typing import Optional
 from spambot import (
     DEV_USERS,
     OWNER_ID,
-    OWNER_USERNAME,
     SUDO_USERS
 )
 
