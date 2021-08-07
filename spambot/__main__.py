@@ -327,8 +327,13 @@ def start(update: Update, context: CallbackContext):
 #         query.message.edit_text("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
 
 def main():
-
-    
+    if LOGS is not None and isinstance(LOGS, str):
+        try:
+            dispatcher.bot.sendMessage(LOGS, "**Gladiators Spam-Bot has been deployed!**\n**➖➖➖➖➖➖➖➖➖**\n**Support: @TeamGladiators**\n**➖➖➖➖➖➖➖➖➖**")
+        except Unauthorized:
+            LOGGER.warning("Bot isnt able to send message to logger chat, go and check!")
+        except BadRequest as e:
+            LOGGER.warning(e.message)
 
     
 
