@@ -122,13 +122,15 @@ def renovate(update: Update, context: CallbackContext):
 LEAVE_HANDLER = CommandHandler("leave", leave)
 UPDATE_HANDLER = CommandHandler("updates", renovate)
 RESTART_HANDLER = CommandHandler("restart", restart)
-PING_HANDLER = CallbackQueryHandler(ping_menu, pattern="pings")
+PING_HANDLER = CommandHandler("ping", ping)
+PINGS_HANDLER = CallbackQueryHandler(ping_menu, pattern="pings")
 
 
 dispatcher.add_handler(LEAVE_HANDLER)
+dispatcher.add_handler(PINGS_HANDLER)
 dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(UPDATE_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
 __mod_name__ = "developercmds"
-__handlers__ = [UPDATE_HANDLER, RESTART_HANDLER, LEAVE_HANDLER, PING_HANDLER]
+__handlers__ = [UPDATE_HANDLER, RESTART_HANDLER, LEAVE_HANDLER, PING_HANDLER, PINGS_HANDLER]
