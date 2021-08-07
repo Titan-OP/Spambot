@@ -10,6 +10,7 @@ import spambot
 from spambot import (
     DEV_USERS,
     OWNER_ID,
+    MASTER_NAME,
     SUDO_USERS,
     dispatcher,
 )
@@ -18,10 +19,25 @@ from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 
 from spambot.modules.helper_funcs.extraction import extract_user
-from telegram.ext import CallbackContext, CommandHandler, run_async
+from telegram.ext import CallbackContext, CommandHandler, run_async, CallbackQueryHandler, MessageHandler
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 
 
+DEFAULTUSER = str(MASTER_NAME)
 
+ping_cap = f"""
+**⚔️Pᴏɴɢ⚔️**
+
+**█▓▒­░⡷⠂ᗰᗩՏTᗴᖇ⠂⢾░▒▓█**
+**『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**
+"""
+
+
+ping_buttons = [
+    [
+        InlineKeyboardButton(text="Check Ping", callback_data="pings")
+    ]
+]
 
 @run_async
 @sudo_plus
@@ -34,13 +50,23 @@ def restart(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def ping(update: Update, context: CallbackContext):
-    ping_start = datetime.now()
-    update.effective_message.reply_text("ᑭOᑎᘜ!!")
-    ping_end = datetime.now()
-    ms = (ping_end-ping_start).microseconds / 1000
-    query = update.callback_query
-    query.edit_text(f"⚔️Pᴏɴɢ⚔️\n`{ms}` ᴍs")
+    update.effective_message.reply_text(
+        ping_cap,
+        reply_markup=InlineKeyboardMarkup(ping_buttons),
+        parse_mode=ParseMode.MARKDOWN,
+        timeout=60,
+    )
     
+@run_async
+@sudo_plus
+def ping_menu(update, context):
+    query = update.callback_query
+    if query.data == "pings":
+        ping_start = datetime.now()
+        ping_end = datetime.now()
+        ms = (ping_end-ping_start).microseconds / 1000
+        pong = f"🌋 Pɪɴɢ = {ms} ᴍs"
+        query.answer(pong, cache_time=0, alert=True)
 
 
 @run_async
@@ -96,8 +122,8 @@ def renovate(update: Update, context: CallbackContext):
 LEAVE_HANDLER = CommandHandler("leave", leave)
 UPDATE_HANDLER = CommandHandler("updates", renovate)
 RESTART_HANDLER = CommandHandler("restart", restart)
+PING_HANDLER = CallbackQueryHandler(ping_menu, pattern="pings")
 
-PING_HANDLER = CommandHandler("ping", ping)
 
 dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(PING_HANDLER)
@@ -105,4 +131,4 @@ dispatcher.add_handler(UPDATE_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
 __mod_name__ = "developercmds"
-__handlers__ = [UPDATE_HANDLER, RESTART_HANDLER, LEAVE_HANDLER]
+__handlers__ = [UPDATE_HANDLER, RESTART_HANDLER, LEAVE_HANDLER, PING_HANDLER]
