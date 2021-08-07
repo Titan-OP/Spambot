@@ -30,7 +30,6 @@ from spambot import (
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from spambot.modules import ALL_MODULES
-from spambot.modules.helper_funcs.misc import paginate_modules
 
 from spambot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
