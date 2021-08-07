@@ -58,8 +58,8 @@
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
         "required": false
       },
-      "OWNER_USERNAME": {
-         "description": "Your username without the @",
+      "MASTER_NAME": {
+         "description": "The name which will be printed as the master's name!!",
          "value": ""
       },
      "MONGO_DB_URI": {
