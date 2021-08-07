@@ -79,7 +79,7 @@ start_caption = f"""
 I ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ sᴘᴀᴍ-ʙᴏᴛ ᴇᴠᴇʀ ᴍᴀᴅᴇ!
 I'ᴍ ʜᴇʀᴇ ᴛᴏ ᴅᴇsᴛʀᴏʏ ʏᴏᴜʀ ᴏᴘᴘᴏɴᴇɴᴛ 🔥🔥🔥
 I ᴄᴀɴ sᴘᴀᴍ ᴄᴏɴᴛɪɴᴜᴏsʟʏ ᴡɪᴛʜ ʟᴇss ғʟᴏᴏᴅ-ᴡᴀɪᴛ ᴇʀʀᴏʀ ᴀɴᴅ ᴡɪᴛʜ ᴍᴏʀᴇ ᴀᴄᴄᴜʀᴀᴄʏ!**
-_↼★᭄ꦿ᭄ꦿmaster★᭄ꦿ᭄ꦿ⇀_
+**█▓▒­░⡷⠂ᗰᗩՏTᗴᖇ⠂⢾░▒▓█**
 **『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**
 
 [©️](https://telegra.ph/file/ec3c057fcba5594151601.jpg) @TeamGladiators
