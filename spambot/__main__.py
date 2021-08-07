@@ -328,7 +328,7 @@ def start(update: Update, context: CallbackContext):
 def main():
     if LOGS is not None and isinstance(LOGS, str):
         try:
-            dispatcher.bot.sendMessage(LOGS, "**Gladiators Spam-Bot has been deployed!**\n**➖➖➖➖➖➖➖➖➖**\n**Support: @TeamGladiators**\n**➖➖➖➖➖➖➖➖➖**")
+            dispatcher.bot.sendMessage(LOGS, "𝐆ʟᴀᴅɪᴀᴛᴏʀ𝐬 𝐒ᴘᴀᴍ-𝐁ᴏᴛ ʜᴀ𝐬 ʙᴇᴇɴ ᴅᴇᴘʟᴏʏᴇᴅ!\n➖➖➖➖➖➖➖➖➖\n𝐒ᴜᴘᴘᴏʀᴛ: @TeamGladiators\n➖➖➖➖➖➖➖➖➖")
         except Unauthorized:
             LOGGER.warning("Bot isnt able to send message to logger chat, go and check!")
         except BadRequest as e:
