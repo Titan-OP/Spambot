@@ -50,23 +50,11 @@ def restart(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def ping(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(
-        ping_cap,
-        reply_markup=InlineKeyboardMarkup(ping_buttons),
-        parse_mode=ParseMode.MARKDOWN,
-        timeout=60,
-    )
-    
-@run_async
-@sudo_plus
-def ping_menu(update, context):
-    query = update.callback_query
-    if query.data == "pings":
-        ping_start = datetime.now()
-        ping_end = datetime.now()
-        ms = (ping_end-ping_start).microseconds / 1000
-        pong = f"🌋 Pɪɴɢ = {ms} ᴍs"
-        query.answer(pong, cache_time=0, alert=True)
+    ping_start = datetime.now()
+    ping_end = datetime.now()
+    ms = (ping_end-ping_start).microseconds / 1000
+    uptime = time_formatter((time.time() - start_time) * 1000)
+    update.effective_message.reply_text(f"**•• Pᴏɴɢ !! ••**\n**⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**\n**⏳ Uᴘᴛɪᴍᴇ - {uptime}**")
 
 
 @run_async
@@ -123,14 +111,12 @@ LEAVE_HANDLER = CommandHandler("leave", leave)
 UPDATE_HANDLER = CommandHandler("updates", renovate)
 RESTART_HANDLER = CommandHandler("restart", restart)
 PING_HANDLER = CommandHandler("ping", ping)
-PINGS_HANDLER = CallbackQueryHandler(ping_menu, pattern="pings")
 
 
 dispatcher.add_handler(LEAVE_HANDLER)
-dispatcher.add_handler(PINGS_HANDLER)
 dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(UPDATE_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
 __mod_name__ = "developercmds"
-__handlers__ = [UPDATE_HANDLER, RESTART_HANDLER, LEAVE_HANDLER, PING_HANDLER, PINGS_HANDLER]
+__handlers__ = [UPDATE_HANDLER, RESTART_HANDLER, LEAVE_HANDLER, PING_HANDLER]
