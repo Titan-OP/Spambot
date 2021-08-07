@@ -63,11 +63,6 @@
          "required": true,
          "value": ""
       },
-     "MONGO_DB_URI": {
-         "description": "Required for database connections.",
-         "required": false,
-         "value": ""
-      },
       "LOGS": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
@@ -110,11 +105,6 @@
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
          "value": "True"
-      },
-      "DONATION_LINK": {
-         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
-         "required": false,
-         "value": "https://t.me/Gladiators_Support"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
