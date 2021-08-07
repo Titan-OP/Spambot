@@ -91,18 +91,21 @@ close_caption = """
 """
 helpbuttons = [
     [
-        InlineKeyboardButton(text="Spam Cmds", callback_data="spamcmds"),
-        InlineKeyboardButton(text="Dev Cmds", callback_data="devcmds")
+        InlineKeyboardButton(text="Sᴘᴀᴍ Cᴍᴅs", callback_data="spamcmds"),
+        InlineKeyboardButton(text="Dᴇᴠ Cᴍᴅs", callback_data="devcmds")
     ],
     [
-        InlineKeyboardButton(text="Close", callback_data="close")
+        InlineKeyboardButton(text="Cʜᴇᴄᴋ Pɪɴɢ", callback_data="pings")
+    ],
+    [
+        InlineKeyboardButton(text="Cʟᴏsᴇ", callback_data="close")
     ]
 ]
 
 help_buttons = [
     [
-        InlineKeyboardButton(text="Back", callback_data="back"),
-        InlineKeyboardButton(text="Close", callback_data="close")
+        InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="back"),
+        InlineKeyboardButton(text="Cʟᴏsᴇ", callback_data="close")
     ]
 ]
 startbuttons = [
@@ -121,7 +124,7 @@ startbuttons = [
   
 openbuttons = [
     [
-        InlineKeyboardButton(text="Open Again", callback_data="open")
+        InlineKeyboardButton(text="Oᴘᴇɴ Aɢᴀɪɴ", callback_data="open")
     ]
 ]
    
@@ -162,6 +165,17 @@ def help_menu(update, context):
             reply_markup=InlineKeyboardMarkup(help_buttons),
             parse_mode=ParseMode.MARKDOWN,
         )
+    if query.data == "pings":
+        ping_start = datetime.now()
+        ping_end = datetime.now()
+        ms = (ping_end-ping_start).microseconds / 1000
+        uptime = time_formatter((time.time() - start_time) * 1000)
+        pong = f"""
+        **•• Pᴏɴɢ !! ••**
+        **⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**
+        **⏳ Uᴘᴛɪᴍᴇ - {uptime}**
+        """
+        query.answer(pong, cache_time=0, alert=True)
     if query.data == "back":
         query.message.edit_text(
             text=help_caption,
@@ -193,6 +207,9 @@ devcmds_handler = CallbackQueryHandler(help_menu, pattern="devcmds")
 back_handler = CallbackQueryHandler(help_menu, pattern="back")
 open_handler = CallbackQueryHandler(help_menu, pattern="open")
 close_handler = CallbackQueryHandler(help_menu, pattern="close")
+PINGS_HANDLER = CallbackQueryHandler(help_menu, pattern="pings")
+
+dispatcher.add_handler(PINGS_HANDLER)
 dispatcher.add_handler(start_handler)
 dispatcher.add_handler(help_handler)
 dispatcher.add_handler(open_handler)
