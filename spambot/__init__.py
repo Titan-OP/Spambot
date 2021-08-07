@@ -37,7 +37,7 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     LOGS = os.environ.get("LOGS", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    MASTER_NAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
@@ -83,7 +83,7 @@ else:
         OWNER_ID = int(Config.OWNER_ID)
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
-    OWNER_USERNAME = Config.OWNER_USERNAME
+    MASTER_NAME = Config.MASTER_NAME
     ALLOW_CHATS = Config.ALLOW_CHATS
     try:
         SUDO_USERS = set(int(x) for x in Config.SUDO_USERS or [])
