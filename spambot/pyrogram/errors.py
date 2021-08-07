@@ -1,4 +1,4 @@
-# © @Mr_Dark_Prince
+# Credits to @Mr_Dark_Prince and Yone robot
 import sys
 import traceback
 from functools import wraps
