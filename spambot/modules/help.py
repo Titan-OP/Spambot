@@ -6,7 +6,7 @@ from spambot.events import gladiator
 from spambot import (
     DEV_USERS,
     OWNER_ID,
-    OWNER_USERNAME,
+    MASTER_NAME,
     SUDO_USERS
 )
 from spambot import (
@@ -33,7 +33,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 
 
 
-DEFAULTUSER = str(OWNER_USERNAME)
+DEFAULTUSER = str(MASTER_NAME)
 help_img = "https://telegra.ph/file/6e92103071aa47ee7023e.mp4"
 dev_caption = """
 **ıllıllı★ 𝙷𝚎𝚕𝚙 𝙼𝚎𝚗𝚞 ★ıllıllı**
