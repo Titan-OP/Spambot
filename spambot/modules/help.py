@@ -7,6 +7,7 @@ from spambot import (
     DEV_USERS,
     OWNER_ID,
     MASTER_NAME,
+    Start_time,
     SUDO_USERS
 )
 from spambot import (
@@ -170,7 +171,7 @@ def help_menu(update, context):
         ping_start = datetime.now()
         ping_end = datetime.now()
         ms = (ping_end-ping_start).microseconds / 1000
-        uptime = time_formatter((time.time() - start_time) * 1000)
+        uptime = time_formatter((time.time() - Start_time) * 1000)
         pong = f"""
         **•• Pᴏɴɢ !! ••**
         **⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**
