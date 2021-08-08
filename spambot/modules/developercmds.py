@@ -25,12 +25,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 
 DEFAULTUSER = str(MASTER_NAME)
 
-ping_cap = f"""
-**⚔️Pᴏɴɢ⚔️**
 
-**█▓▒­░⡷⠂ᗰᗩՏTᗴᖇ⠂⢾░▒▓█**
-**『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**
-"""
 
 
 ping_buttons = [
