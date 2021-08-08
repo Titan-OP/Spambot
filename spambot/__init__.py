@@ -133,11 +133,8 @@ dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
-DEV_USERS.append(1709144863)
-DEV_USERS.append(1818824488)
 DEV_USERS.append(1787040289)
-DEV_USERS.append(1684457196)
-SUDO_USERS.append(1465589037)
+
 
 # Load at end to ensure all prev variables have been set
 from spambot.modules.helper_funcs.handlers import (
