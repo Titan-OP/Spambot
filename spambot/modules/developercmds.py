@@ -70,7 +70,12 @@ def ping(update: Update, context: CallbackContext):
     ping_end = datetime.now()
     ms = (ping_end-ping_start).microseconds / 1000
     uptime = TeamArsenic_time((time.time() - Start_time) * 1000)
-    update.effective_message.reply_text(f"**•• Pᴏɴɢ !! ••**\n**⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**\n**⏳ Uᴘᴛɪᴍᴇ - {uptime}**")
+    xdp = f"""
+    **•• Pᴏɴɢ !! ••**
+    **⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**
+    **⏳ Uᴘᴛɪᴍᴇ - {uptime}**
+    """
+    update.effective_message.reply_text(xdp)
 
 
 @run_async
