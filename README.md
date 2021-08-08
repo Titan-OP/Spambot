@@ -35,6 +35,6 @@
 
 ## 📌 Cʀᴇᴅɪᴛs 
 * [![TeamGladiators-Devs](https://img.shields.io/static/v1?label=TeamGladiators&message=Devs&color=critical)](https://t.me/Gladiators_Devs)
-* [Yone-Bot](https://github.com/Gladiators-Projects/YoneRobot) For Base
+* [Yone-Bot](https://github.com/noob-kittu/YoneRobot) For Base
 * [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Curses.
 * [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
