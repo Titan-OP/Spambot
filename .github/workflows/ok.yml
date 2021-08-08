@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "register"
+          find: "query"
 
-          replace: "gladiator"
+          replace: "arsenic"
 
       - name: Create Pull Request
 
