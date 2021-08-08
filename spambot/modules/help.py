@@ -198,7 +198,7 @@ def help_menu(update, context):
         ⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs
         ⏳ Uᴘᴛɪᴍᴇ - {uptime}
         """
-        query.answer(pong, cache_time=0, alert=True)
+        query.answer(pong, alert=True)
     if query.data == "back":
         query.message.edit_text(
             text=help_caption,
