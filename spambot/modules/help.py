@@ -175,20 +175,20 @@ def help(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def help_menu(update, context):
-    arsenic = update.callback_arsenic
-    if arsenic.data == "spamcmds":
-        arsenic.message.edit_text(
+    query = update.callback_query
+    if query.data == "spamcmds":
+        query.message.edit_text(
             text=spam_caption,
             reply_markup=InlineKeyboardMarkup(help_buttons),
             parse_mode=ParseMode.MARKDOWN,
         )
-    if arsenic.data == "devcmds":
-        arsenic.message.edit_text(
+    if query.data == "devcmds":
+        query.message.edit_text(
             text=dev_caption,
             reply_markup=InlineKeyboardMarkup(help_buttons),
             parse_mode=ParseMode.MARKDOWN,
         )
-    if arsenic.data == "pings":
+    if query.data == "pings":
         ping_start = datetime.now()
         ping_end = datetime.now()
         ms = (ping_end-ping_start).microseconds / 1000
@@ -198,21 +198,21 @@ def help_menu(update, context):
         ⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs
         ⏳ Uᴘᴛɪᴍᴇ - {uptime}
         """
-        arsenic.answer(pong, alert=True)
-    if arsenic.data == "back":
-        arsenic.message.edit_text(
+        query.answer(pong, alert=True)
+    if query.data == "back":
+        query.message.edit_text(
             text=help_caption,
             reply_markup=InlineKeyboardMarkup(helpbuttons),
             parse_mode=ParseMode.MARKDOWN,
         )
-    if arsenic.data == "open":
-        arsenic.message.edit_text(
+    if query.data == "open":
+        query.message.edit_text(
             text=help_caption,
             reply_markup=InlineKeyboardMarkup(helpbuttons),
             parse_mode=ParseMode.MARKDOWN,
         )
-    if arsenic.data == "close":
-        arsenic.message.edit_text(
+    if query.data == "close":
+        query.message.edit_text(
             text=close_caption,
             reply_markup=InlineKeyboardMarkup(openbuttons),
             parse_mode=ParseMode.MARKDOWN,

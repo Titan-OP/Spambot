@@ -47,8 +47,8 @@ def userupdate(**args):
     return decorator
 
 
-def inlinearsenic(**args):
-    """ Registers inline arsenic. """
+def inlinequery(**args):
+    """ Registers inline query. """
     pattern = args.get("pattern", None)
 
     if pattern is not None and not pattern.startswith("(?i)"):
@@ -61,8 +61,8 @@ def inlinearsenic(**args):
     return decorator
 
 
-def callbackarsenic(**args):
-    """ Registers inline arsenic. """
+def callbackquery(**args):
+    """ Registers inline query. """
 
     def decorator(func):
         telethn.add_event_handler(func, events.CallbackQuery(**args))

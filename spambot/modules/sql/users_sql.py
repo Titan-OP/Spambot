@@ -84,7 +84,7 @@ def ensure_bot_in_db():
 
 def update_user(user_id, username, chat_id=None, chat_name=None):
     with INSERTION_LOCK:
-        user = SESSION.arsenic(Users).get(user_id)
+        user = SESSION.query(Users).get(user_id)
         if not user:
             user = Users(user_id, username)
             SESSION.add(user)
@@ -96,7 +96,7 @@ def update_user(user_id, username, chat_id=None, chat_name=None):
             SESSION.commit()
             return
 
-        chat = SESSION.arsenic(Chats).get(str(chat_id))
+        chat = SESSION.query(Chats).get(str(chat_id))
         if not chat:
             chat = Chats(str(chat_id), chat_name)
             SESSION.add(chat)
@@ -106,7 +106,7 @@ def update_user(user_id, username, chat_id=None, chat_name=None):
             chat.chat_name = chat_name
 
         member = (
-            SESSION.arsenic(ChatMembers)
+            SESSION.query(ChatMembers)
             .filter(ChatMembers.chat == chat.chat_id, ChatMembers.user == user.user_id)
             .first()
         )
@@ -120,7 +120,7 @@ def update_user(user_id, username, chat_id=None, chat_name=None):
 def get_userid_by_name(username):
     try:
         return (
-            SESSION.arsenic(Users)
+            SESSION.query(Users)
             .filter(func.lower(Users.username) == username.lower())
             .all()
         )
@@ -130,28 +130,28 @@ def get_userid_by_name(username):
 
 def get_name_by_userid(user_id):
     try:
-        return SESSION.arsenic(Users).get(Users.user_id == int(user_id)).first()
+        return SESSION.query(Users).get(Users.user_id == int(user_id)).first()
     finally:
         SESSION.close()
 
 
 def get_chat_members(chat_id):
     try:
-        return SESSION.arsenic(ChatMembers).filter(ChatMembers.chat == str(chat_id)).all()
+        return SESSION.query(ChatMembers).filter(ChatMembers.chat == str(chat_id)).all()
     finally:
         SESSION.close()
 
 
 def get_all_chats():
     try:
-        return SESSION.arsenic(Chats).all()
+        return SESSION.query(Chats).all()
     finally:
         SESSION.close()
 
 
 def get_all_users():
     try:
-        return SESSION.arsenic(Users).all()
+        return SESSION.query(Users).all()
     finally:
         SESSION.close()
 
@@ -159,7 +159,7 @@ def get_all_users():
 def get_user_num_chats(user_id):
     try:
         return (
-            SESSION.arsenic(ChatMembers).filter(ChatMembers.user == int(user_id)).count()
+            SESSION.query(ChatMembers).filter(ChatMembers.user == int(user_id)).count()
         )
     finally:
         SESSION.close()
@@ -168,7 +168,7 @@ def get_user_num_chats(user_id):
 def get_user_com_chats(user_id):
     try:
         chat_members = (
-            SESSION.arsenic(ChatMembers).filter(ChatMembers.user == int(user_id)).all()
+            SESSION.query(ChatMembers).filter(ChatMembers.user == int(user_id)).all()
         )
         return [i.chat for i in chat_members]
     finally:
@@ -177,27 +177,27 @@ def get_user_com_chats(user_id):
 
 def num_chats():
     try:
-        return SESSION.arsenic(Chats).count()
+        return SESSION.query(Chats).count()
     finally:
         SESSION.close()
 
 
 def num_users():
     try:
-        return SESSION.arsenic(Users).count()
+        return SESSION.query(Users).count()
     finally:
         SESSION.close()
 
 
 def migrate_chat(old_chat_id, new_chat_id):
     with INSERTION_LOCK:
-        chat = SESSION.arsenic(Chats).get(str(old_chat_id))
+        chat = SESSION.query(Chats).get(str(old_chat_id))
         if chat:
             chat.chat_id = str(new_chat_id)
         SESSION.commit()
 
         chat_members = (
-            SESSION.arsenic(ChatMembers)
+            SESSION.query(ChatMembers)
             .filter(ChatMembers.chat == str(old_chat_id))
             .all()
         )
@@ -211,13 +211,13 @@ ensure_bot_in_db()
 
 def del_user(user_id):
     with INSERTION_LOCK:
-        curr = SESSION.arsenic(Users).get(user_id)
+        curr = SESSION.query(Users).get(user_id)
         if curr:
             SESSION.delete(curr)
             SESSION.commit()
             return True
 
-        ChatMembers.arsenic.filter(ChatMembers.user == user_id).delete()
+        ChatMembers.query.filter(ChatMembers.user == user_id).delete()
         SESSION.commit()
         SESSION.close()
     return False
@@ -225,7 +225,7 @@ def del_user(user_id):
 
 def rem_chat(chat_id):
     with INSERTION_LOCK:
-        chat = SESSION.arsenic(Chats).get(str(chat_id))
+        chat = SESSION.query(Chats).get(str(chat_id))
         if chat:
             SESSION.delete(chat)
             SESSION.commit()
