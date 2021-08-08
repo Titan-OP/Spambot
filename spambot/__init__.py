@@ -3,7 +3,7 @@ import os
 import sys
 import time
 import spamwatch
-
+from datetime import datetime
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
@@ -64,7 +64,7 @@ if ENV:
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
-
+    Start_time = time.time()
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
 
