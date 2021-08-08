@@ -194,9 +194,9 @@ def help_menu(update, context):
         ms = (ping_end-ping_start).microseconds / 1000
         uptime = TeamArsenic_time((time.time() - Start_time) * 1000)
         pong = f"""
-        **•• Pᴏɴɢ !! ••**
-        **⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**
-        **⏳ Uᴘᴛɪᴍᴇ - {uptime}**
+        •• Pᴏɴɢ !! ••
+        ⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs
+        ⏳ Uᴘᴛɪᴍᴇ - {uptime}
         """
         query.answer(pong, cache_time=0, alert=True)
     if query.data == "back":
