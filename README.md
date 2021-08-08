@@ -10,7 +10,7 @@
   [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/SpamBot?style=flat-square&color=blue)](https://github.com/Gladiators-Projects/SpamBot/stargazers)
   [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/SpamBot?style=flat-square&color=blue)](https://github.com/Gladiators-Projects/SpamBot/fork)
 
-### Deploy to Heroku
+### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
   
   
   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gladiators-Projects/spambot)
@@ -33,7 +33,7 @@
 ☞ `MASTER_NAME` - Name of the master, whivh will be displayed in bots dm!!
 
 
-## 📌 Credits 
+## 📌 Cʀᴇᴅɪᴛs 
 * [![TeamGladiators-Devs](https://img.shields.io/static/v1?label=TeamGladiators&message=Devs&color=critical)](https://t.me/Gladiators_Devs)
 * [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Base
 * [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
