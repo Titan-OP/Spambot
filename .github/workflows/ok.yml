@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "query"
+          find: "arsenic"
 
-          replace: "arsenic"
+          replace: "query"
 
       - name: Create Pull Request
 
