@@ -104,11 +104,11 @@ def renovate(update: Update, context: CallbackContext):
     
     
     sent_msg = update.effective_message.reply_text(
-        "**Trying to sync with github repo...**"
+        "Trying to sync with github repo..."
     )
     subprocess.Popen("git pull", stdout=subprocess.PIPE, shell=True)
 
-    sent_msg_text = sent_msg.text + "\n\n**I guess bot is synced... restarting in**"
+    sent_msg_text = sent_msg.text + "\n\nI guess bot is synced... restarting in "
 
     for i in reversed(range(5)):
         sent_msg.edit_text(sent_msg_text + str(i + 1))
