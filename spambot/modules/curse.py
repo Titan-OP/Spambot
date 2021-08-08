@@ -444,51 +444,52 @@ def replycurse(update: Update, context: CallbackContext) -> str:
 @typing_action
 @gladiator(pattern="^/curse(?: |$)(.*)")
 async def gladiators(event):
-	Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
-	xd = await event.get_reply_message()
-	if len(Pika) == 2:
-		message = str(Pika[1])
-		print(message)
-		msg = await event.client.get_entity(message)
-		usid = msg.id
-		name = msg.first_name
-		mention = f"[{name}](tg://user?id={usid})"
-		if usid in glad:
-			await event.reply("I can't betray @TeamGladiators's crew!!")
-			return ""
-		if usid in DEV_USERS:
-			await event.reply("This guy is a dev user!!")
-			return ""
-		if usid in SUDO_USERS:
-			await event.reply("This guy is a Sudo user!!")
-			return
-		rng = int(Pika[0])
-		for i in range(rng):
-			verse = random.choice(curses)
-			text_message = f"{mention} {verse}"
-			await event.client.send_message(event.chat, text_message)
-			await asyncio.sleep(2)
-	elif event.reply_to_msg_id:
-		msg = await event.get_reply_message()
-		stupid = await event.client.get_entity(msg.sender_id)
-		usid = stupid.id
-		name = stupid.first_name
-		mention = f"[{name}](tg://user?id={usid})"
-		if usid in glad:
-			await event.reply("I can't betray @TeamGladiators's crew!!")
-			return
-		if usid in DEV_USERS:
-			await event.reply("This guy is a dev user!!")
-			return
-		if usid in SUDO_USERS:
-			await event.reply("This guy is a Sudo user!!")
-			return
-		rng = int(Pika[0])
-		for i in range(rng):
-			verse = random.choice(raid)
-			text_message = f"{mention} {verse}"
-			await event.client.send_message(event.chat, text_message)
-			await asyncio.sleep(2)
+	if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
+		Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
+		xd = await event.get_reply_message()
+		if len(Pika) == 2:
+			message = str(Pika[1])
+			print(message)
+			msg = await event.client.get_entity(message)
+			usid = msg.id
+			name = msg.first_name
+			mention = f"[{name}](tg://user?id={usid})"
+			if usid in glad:
+				await event.reply("I can't betray @TeamGladiators's crew!!")
+				return ""
+			if usid in DEV_USERS:
+				await event.reply("This guy is a dev user!!")
+				return ""
+			if usid in SUDO_USERS:
+				await event.reply("This guy is a Sudo user!!")
+				return
+			rng = int(Pika[0])
+			for i in range(rng):
+				verse = random.choice(curses)
+				text_message = f"{mention} {verse}"
+				await event.client.send_message(event.chat, text_message)
+				await asyncio.sleep(2)
+		elif event.reply_to_msg_id:
+			msg = await event.get_reply_message()
+			stupid = await event.client.get_entity(msg.sender_id)
+			usid = stupid.id
+			name = stupid.first_name
+			mention = f"[{name}](tg://user?id={usid})"
+			if usid in glad:
+				await event.reply("I can't betray @TeamGladiators's crew!!")
+				return
+			if usid in DEV_USERS:
+				await event.reply("This guy is a dev user!!")
+				return
+			if usid in SUDO_USERS:
+				await event.reply("This guy is a Sudo user!!")
+				return
+			rng = int(Pika[0])
+			for i in range(rng):
+				verse = random.choice(raid)
+				text_message = f"{mention} {verse}"
+				await event.client.send_message(event.chat, text_message)
+				await asyncio.sleep(2)
 
 @run_async
 @sudo_plus
