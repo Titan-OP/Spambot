@@ -12,7 +12,6 @@
 
 ### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
   
-  Get the [Necessary Variables](#🗒️Nᴇᴄᴇssᴀʀʏ-Vᴀʀɪᴀʙʟᴇs) and then deploy using the given button!<br><br>
   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gladiators-Projects/spambot)
 
 ### 🛠️ Lᴀɴɢᴜᴀɢᴇs Aɴᴅ Tᴏᴏʟs
