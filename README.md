@@ -38,3 +38,8 @@
 * [Yone-Bot](https://github.com/Gladiators-Projects/YoneRobot) For Base
 * [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Curses.
 * [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
+
+
+```
+If you are taking code from this repository without a fork, then atleast give credits to our hardwork. ❤️
+```
