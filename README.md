@@ -31,3 +31,10 @@
 ☞ `BOT_ID` - Your bot id get that using any other bot!!<br>
 ☞ `OWNER_ID` - User id of the master get that using any other bot!!<br>
 ☞ `MASTER_NAME` - Name of the master, whivh will be displayed in bots dm!!
+
+
+# Credits
+* [![TeamGladiators-Devs](https://img.shields.io/static/v1?label=TeamGladiators&message=Devs&color=critical)](https://t.me/Gladiators_Devs)
+* [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Base
+* [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
+* [Yone-Bot](https://github.com/noob-kittu/YoneRobot) For Curses
