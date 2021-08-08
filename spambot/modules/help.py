@@ -77,6 +77,7 @@ spam_caption = """
 **/uspam:** Spams text continuosly!!\nSyntax: /uspam <text>
 **/dspam:** Delay spam a text for given counter after given time!!
 Syntax: /dspam <seconds> <counter> <text>
+**/wspam:** Spams words in a message!!\nSyntax: /wspam <text>
 **/mspam:** Spams media for given counter!!
 Syntax: /mspam <counter>
 (replying to any media)
