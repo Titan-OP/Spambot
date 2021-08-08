@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "arsenic"
+          find: "noob-kittu"
 
-          replace: "query"
+          replace: "Gladiators-Projects"
 
       - name: Create Pull Request
 
