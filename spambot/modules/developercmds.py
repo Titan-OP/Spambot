@@ -2,6 +2,7 @@ import os
 import subprocess
 import sys
 from datetime import datetime
+from math import ceil
 from contextlib import suppress
 from time import sleep
 
@@ -12,6 +13,7 @@ from spambot import (
     OWNER_ID,
     MASTER_NAME,
     SUDO_USERS,
+    Start_time,
     dispatcher,
 )
 from spambot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
@@ -48,7 +50,7 @@ def ping(update: Update, context: CallbackContext):
     ping_start = datetime.now()
     ping_end = datetime.now()
     ms = (ping_end-ping_start).microseconds / 1000
-    uptime = time_formatter((time.time() - start_time) * 1000)
+    uptime = time_formatter((time.time() - Start_time) * 1000)
     update.effective_message.reply_text(f"**•• Pᴏɴɢ !! ••**\n**⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs**\n**⏳ Uᴘᴛɪᴍᴇ - {uptime}**")
 
 
