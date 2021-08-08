@@ -33,8 +33,10 @@
 ☞ `MASTER_NAME` - Name of the master, whivh will be displayed in bots dm!!
 
 
-# Credits
+<details>
+<summary>📌 Credits <summary>
 * [![TeamGladiators-Devs](https://img.shields.io/static/v1?label=TeamGladiators&message=Devs&color=critical)](https://t.me/Gladiators_Devs)
 * [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Base
 * [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
 * [Yone-Bot](https://github.com/noob-kittu/YoneRobot) For Curses
+<details>
