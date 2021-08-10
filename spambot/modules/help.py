@@ -83,6 +83,8 @@ Syntax: /mspam <counter>
 (replying to any media)
 **/packspam:** Spams all stickers from sticker pack!!
 Syntax: /packspam (replying to any sticker)
+**/hang:** Spams hanging message for given counter!!
+Syntax: /hang <counter>
 **/replycurse:** Activates reply and curse on the user!!
 Syntax: /replycurse (replying to anyone)
 **/dreplycurse:** Deactivates reply and curse on the user!!
