@@ -85,6 +85,10 @@ Syntax: /mspam <counter>
 Syntax: /packspam (replying to any sticker)
 **/hang:** Spams hanging message for given counter!!
 Syntax: /hang <counter>
+**/curse:** Activates curse on the user for given range!!
+Syntax: /curse @telegram 10 or /curse 10 (replying to anyone)
+**/ucurse:** Activates curse on the user for unlimited range!!
+Syntax: /ucurse @telegram or /ucurse (replying to anyone)
 **/replycurse:** Activates reply and curse on the user!!
 Syntax: /replycurse (replying to anyone)
 **/dreplycurse:** Deactivates reply and curse on the user!!
