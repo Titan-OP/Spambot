@@ -84,13 +84,13 @@ def leave(update: Update, context: CallbackContext):
             bot.leave_chat(int(chat_id))
         except TelegramError:
             update.effective_message.reply_text(
-                "**Beep boop, I could not leave that group(dunno why tho).**"
+                "**Oops! Something went wrong!**"
             )
             return
         with suppress(Unauthorized):
-            update.effective_message.reply_text("**Beep boop, I left that soup!.**")
+            update.effective_message.reply_text("**Successfully left that chat!**")
     else:
-        update.effective_message.reply_text("**Send a valid chat ID**")
+        update.effective_message.reply_text("**Am I a joke to you?\nSend a valid chat id bruhh!**")
 
 
 @run_async
