@@ -39,5 +39,5 @@
 
 
 ```
-If you are taking code from this repository without a fork, then atleast give credits to our hardwork. ❤️
+If you are taking code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
 ```
