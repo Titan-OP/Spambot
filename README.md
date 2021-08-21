@@ -7,7 +7,7 @@
 ### 🚀 Gʟᴀᴅɪᴀᴛᴏʀs SᴘᴀᴍBᴏᴛ
 
   <a href="https://github.com/Gladiators-Projects"><img alt="Website" src="https://img.shields.io/badge/Gladiators-Projects-blue"></a>
-  [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/SpamBot?style=flat-square&color=blue)](https://github.com/Gladiators-Projects/SpamBot/stargazers)
+  [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Gladiators-Projects/SpamBot/stargazers)
   [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/SpamBot?style=flat-square&color=blue)](https://github.com/Gladiators-Projects/SpamBot/fork)
 
 ### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
