@@ -58,66 +58,84 @@ def TeamArsenic_time(milliseconds: int) -> str:
 DEFAULTUSER = str(MASTER_NAME)
 help_img = "https://telegra.ph/file/6e92103071aa47ee7023e.mp4"
 dev_caption = """
-**ıllıllı★ 𝙷𝚎𝚕𝚙 𝙼𝚎𝚗𝚞 ★ıllıllı**
+**★ 𝐇ᴇʟᴘ✘𝐌ᴇɴᴜ ★**
 
 
 **/ping:** Check ping of the server!!
+
 **/addsudo:** Use this while replying to anyone will add him as a sudo user!!
+
 **/rmsudo:** Use this while replying to anyone will remove him from sudo user!!
+
 **/leave <chat id>:** Bot will leave that chat!!
+
 **/updates:** Check new updates and updates the bot!!
+
 **/restart:** Restarts the bot!!(Too fast!! **Supersonic**)
 
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @ToxicSpamxD
 """
 spam_caption = """
-**ıllıllı★ 𝙷𝚎𝚕𝚙 𝙼𝚎𝚗𝚞 ★ıllıllı**
+**★ 𝐇ᴇʟᴘ✘𝐌ᴇɴᴜ ★**
 
 **/spam:** Spams text for given counter!!\nSyntax: /spam <counter> <text>
+
 **/uspam:** Spams text continuosly!!\nSyntax: /uspam <text>
+
 **/dspam:** Delay spam a text for given counter after given time!!
 Syntax: /dspam <seconds> <counter> <text>
+
 **/wspam:** Spams words in a message!!\nSyntax: /wspam <text>
+
 **/mspam:** Spams media for given counter!!
 Syntax: /mspam <counter>
 (replying to any media)
+
 **/packspam:** Spams all stickers from sticker pack!!
 Syntax: /packspam (replying to any sticker)
+
 **/hang:** Spams hanging message for given counter!!
 Syntax: /hang <counter>
+
 **/curse:** Activates curse on the user for given range!!
 Syntax: /curse @telegram 10 or /curse 10 (replying to anyone)
+
 **/ucurse:** Activates curse on the user for unlimited range!!
 Syntax: /ucurse @telegram or /ucurse (replying to anyone)
+
 **/replycurse:** Activates reply and curse on the user!!
 Syntax: /replycurse (replying to anyone)
+
 **/dreplycurse:** Deactivates reply and curse on the user!!
 Syntax: /dreplycurse (replying to anyone)
 
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @ToxicSpamxD
 """
-start_img = "https://telegra.ph/file/1312f063f0395fc933edd.mp4"
+start_img = "https://telegra.ph/file/d8e19ed588fcc7f0050e2.jpg"
 help_caption = """
 **Hᴇʏ ᴍᴀsᴛᴇʀ,
 ʏᴏᴜ ᴄᴀɴ ᴀᴄᴄᴇss ᴛʜᴇ ᴡʜᴏʟᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴜsɪɴɢ ᴛʜᴇ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴs!**
 
-[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @TeamGladiators
+[©️](https://telegra.ph/file/6e92103071aa47ee7023e.mp4) @ToxicSpamxD
 """
 start_caption = f"""
 **Nᴏᴡ ᴍᴇ ᴛᴏ ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍʏsᴇʟғ.
-I ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ sᴘᴀᴍ-ʙᴏᴛ ᴇᴠᴇʀ ᴍᴀᴅᴇ!
-I'ᴍ ʜᴇʀᴇ ᴛᴏ ᴅᴇsᴛʀᴏʏ ʏᴏᴜʀ ᴏᴘᴘᴏɴᴇɴᴛ 🔥🔥🔥
-I ᴄᴀɴ sᴘᴀᴍ ᴄᴏɴᴛɪɴᴜᴏsʟʏ ᴡɪᴛʜ ʟᴇss ғʟᴏᴏᴅ-ᴡᴀɪᴛ ᴇʀʀᴏʀ ᴀɴᴅ ᴡɪᴛʜ ᴍᴏʀᴇ ᴀᴄᴄᴜʀᴀᴄʏ!**
+I ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ sᴘᴀᴍ-ʙᴏᴛ.
 
-**█▓▒­░⡷⠂ᗰᗩՏTᗴᖇ⠂⢾░▒▓█**
+|•Mʏ ɴᴀᴍᴇ ɪꜱ Tᴏxɪᴄ✘SᴘᴀᴍBᴏᴛ•|
+
+I'ᴍ ʜᴇʀᴇ ᴛᴏ ᴅᴇsᴛʀᴏʏ ʏᴏᴜʀ ᴏᴘᴘᴏɴᴇɴᴛ.😈😈
+I ᴄᴀɴ sᴘᴀᴍ ᴄᴏɴᴛɪɴᴜᴏsʟʏ ᴡɪᴛʜ ʟᴇss ғʟᴏᴏᴅ-ᴡᴀɪᴛ ᴇʀʀᴏʀꜱ ᴀɴᴅ ᴡɪᴛʜ ᴍᴏʀᴇ ᴀᴄᴄᴜʀᴀᴄʏ!!**
+
+**🅼🅰🆂🆃🅴🆁**
 **『 [{DEFAULTUSER}](tg://user?id={OWNER_ID}) 』**
 
-[©️](https://telegra.ph/file/ec3c057fcba5594151601.jpg) @TeamGladiators
+[©️](https://telegra.ph/file/ec3c057fcba5594151601.jpg) @ToxicSpamxD
 """
 close_caption = """
-**Hᴇʟᴘ ᴍᴇɴᴜ ʜᴀs ʙᴇᴇɴ ᴄʟᴏsᴇᴅ!!**
+**Tᴏxɪᴄ✘SᴘᴀᴍBᴏᴛ Hᴇʟᴘ ᴍᴇɴᴜ ʜᴀs ʙᴇᴇɴ ᴄʟᴏsᴇᴅ!!**
 
-©️ @TeamGladiators
+©️ @ToxicSpamxD
 """
 helpbuttons = [
     [
@@ -141,14 +159,14 @@ help_buttons = [
 startbuttons = [
     [
         InlineKeyboardButton(
-            text="Repo", url="https://github.com/Gladiators-Projects/SpamBot"),
+            text="Rᴇᴘᴏ", url="https://github.com/Titan-OP/SpamBot"),
         InlineKeyboardButton(
-            text="Support", url=f"https://t.me/Gladiators_Support"
+            text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ToxicSpamxD"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Github Organisation", url="https://github.com/Gladiators-Projects"),
+            text="Cʀᴇᴀᴛᴏʀ", url="Https://t.me/ToxicBoyxD"),
     ]
 ]
   
@@ -201,9 +219,12 @@ def help_menu(update, context):
         ms = (ping_end-ping_start).microseconds / 1000
         uptime = TeamArsenic_time((time.time() - Start_time) * 1000)
         pong = f"""
-        •• Pᴏɴɢ !! ••
-        ⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs
-        ⏳ Uᴘᴛɪᴍᴇ - {uptime}
+        ✘• Pᴏɴɢ •✘
+        ••➖➖➖➖➖➖••
+        📍 Pɪɴɢ Sᴘᴇᴇᴅ : {ms}ᴍs
+        🔮 Uᴘᴛɪᴍᴇ : {uptime}
+        ••➖➖➖➖➖➖••
+               © @ToxicSpamxD
         """
         query.answer(pong, alert=True)
     if query.data == "back":
