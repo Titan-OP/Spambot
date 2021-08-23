@@ -2,6 +2,7 @@
 Credits to:
   t.me/TeamGladiators
   t.me/TeamUltroid
+  t.me/ToxicSpamxD
 """
 
 from spambot.events import gladiator
@@ -19,7 +20,7 @@ from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import InputStickerSetID, InputStickerSetShortName
 
 
-@toxic(pattern="^/spam(?: |$)(.*)")
+@gladiator(pattern="^/spam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -36,7 +37,7 @@ async def gladiators(event):
       await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@toxic(pattern="^/hang(?: |$)(.*)")
+@gladiator(pattern="^/hang(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -55,7 +56,7 @@ async def gladiators(event):
 
 
 
-@toxic(pattern="^/wspam(?: |$)(.*)")
+@gladiator(pattern="^/wspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -68,7 +69,7 @@ async def gladiators(event):
       await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@toxic(?: |$)(.*)")
+@gladiator(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -86,7 +87,7 @@ async def gladiators(event):
 
 
 
-@toxic(pattern="^/mspam(?: |$)(.*)")
+@gladiator(pattern="^/mspam(?: |$)(.*)")
 async def gladiators(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
       try:
@@ -103,7 +104,7 @@ async def gladiators(e):
         await e.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@toxic(pattern="^/packspam(?: |$)(.*)")
+@gladiator(pattern="^/packspam(?: |$)(.*)")
 async def _(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
       try:
@@ -134,7 +135,7 @@ async def _(e):
         
         
 
-@toxic(pattern="^/bigspam(?: |$)(.*)")
+@gladiator(pattern="^/bigspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -150,7 +151,7 @@ async def gladiators(event):
 
 
 
-@toxic(pattern="^/uspam(?: |$)(.*)")
+@gladiator(pattern="^/uspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
