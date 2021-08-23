@@ -6,7 +6,7 @@
 
 ### 🚀 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ
 
-  <a href="https://t.me/ToxicBoyxD"><img alt="Website" src="https://img.shields.io/badge/Toxic-Boy"></a>
+  <a href="https://t.me/ToxicBoyxD"><img alt="Website" src="https://img.shields.io/badge/Toxic Boy"></a>
   [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Titan-OP/SpamBot/stargazers)
   [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/Spambot?style=social)](https://github.com/Titan-OP/SpamBot/fork)
 
@@ -36,7 +36,7 @@
 * [Yone-Bot](https://github.com/noob-kittu/YoneRobot) For Base
 * [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Curses.
 * [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
-* [Toxic Boy](https://GitHub.com/Titan-OP) {Editor}
+* [Toxic Boy](https://GitHub.com/Titan-OP) Owner Of This Repo
 
 ```
 If you are taking code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
