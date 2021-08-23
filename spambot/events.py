@@ -191,7 +191,7 @@ def load_module(shortname):
         name = "spambot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
-        mod.gladiator = toxic
+        mod.gladiator = gladiator
         mod.spambot = spambot
         mod.tbot = telethn
         mod.logger = logging.getLogger(shortname)
