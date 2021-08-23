@@ -6,13 +6,13 @@
 
 ### 🚀 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ
 
-  <a href="https://github.com/Gladiators-Projects"><img alt="Website" src="https://img.shields.io/badge/Gladiators-Projects-blue"></a>
+  <a href="https://t.me/ToxicBoyxD"><img alt="Website" src="https://img.shields.io/badge/Toxic-Boy"></a>
   [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Gladiators-Projects/SpamBot/stargazers)
   [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/Spambot?style=social)](https://github.com/Gladiators-Projects/SpamBot/fork)
 
 ### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
   
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Titan-OP/spambot)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Titan-OP/Spambot)
 
 ### 🛠️ Lᴀɴɢᴜᴀɢᴇs Aɴᴅ Tᴏᴏʟs
 
