@@ -327,7 +327,7 @@ def start(update: Update, context: CallbackContext):
 def main():
     if LOGS is not None and isinstance(LOGS, str):
         try:
-            dispatcher.bot.sendMessage(LOGS, "𝐆ʟᴀᴅɪᴀᴛᴏʀ𝐬 𝐒ᴘᴀᴍ-𝐁ᴏᴛ ʜᴀ𝐬 ʙᴇᴇɴ ᴅᴇᴘʟᴏʏᴇᴅ!\n➖➖➖➖➖➖➖➖➖\n𝐒ᴜᴘᴘᴏʀᴛ: @TeamGladiators\n➖➖➖➖➖➖➖➖➖")
+            dispatcher.bot.sendMessage(LOGS, "✘ 𝐓ᴏxɪᴄ • 𝐒ᴘᴀᴍ-𝐁ᴏᴛ ✘ ʜᴀ𝐬 ʙᴇᴇɴ ᴅᴇᴘʟᴏʏᴇᴅ!\n➖➖➖➖➖➖➖➖➖➖\n𝐒ᴜᴘᴘᴏʀᴛ: @ToxicSpamxD\n➖➖➖➖➖➖➖➖➖")
         except Unauthorized:
             LOGGER.warning("Bot isnt able to send message to logger chat, go and check!")
         except BadRequest as e:
