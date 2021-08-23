@@ -182,7 +182,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Successfully imported " + shortname)
+        print("😈 Successfully imported 😈 " + shortname)
     else:
         import importlib
         import spambot.events
@@ -191,13 +191,13 @@ def load_module(shortname):
         name = "spambot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
-        mod.gladiator = gladiator
+        mod.gladiator = toxic
         mod.spambot = spambot
         mod.tbot = telethn
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
         sys.modules["spambot.modules." + shortname] = mod
-        print("Successfully imported " + shortname)
+        print("😈 Successfully imported 😈 " + shortname)
 
 
 path = "spambot/modules/*.py"
