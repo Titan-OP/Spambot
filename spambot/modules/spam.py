@@ -69,7 +69,7 @@ async def gladiators(event):
       await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@gladiator(?: |$)(.*)")
+@gladiator(pattern="^/dspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
