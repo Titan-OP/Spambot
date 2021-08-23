@@ -4,7 +4,7 @@
   <img src="spambot/resources/Gladiators.jpeg" alt="Logo">
 </p>
 
-### 🚀 Gʟᴀᴅɪᴀᴛᴏʀs SᴘᴀᴍBᴏᴛ
+### 🚀 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ
 
   <a href="https://github.com/Gladiators-Projects"><img alt="Website" src="https://img.shields.io/badge/Gladiators-Projects-blue"></a>
   [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Gladiators-Projects/SpamBot/stargazers)
@@ -12,7 +12,7 @@
 
 ### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
   
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gladiators-Projects/spambot)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Titan-OP/TOXIC-SPAM)
 
 ### 🛠️ Lᴀɴɢᴜᴀɢᴇs Aɴᴅ Tᴏᴏʟs
 
@@ -36,7 +36,7 @@
 * [Yone-Bot](https://github.com/noob-kittu/YoneRobot) For Base
 * [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Curses.
 * [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
-
+* [Toxic Boy](https://GitHub.com/Titan-OP) {Editor}
 
 ```
 If you are taking code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
