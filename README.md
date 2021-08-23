@@ -7,8 +7,8 @@
 ### 🚀 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ
 
   <a href="https://t.me/ToxicBoyxD"><img alt="Website" src="https://img.shields.io/badge/Toxic-Boy"></a>
-  [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Gladiators-Projects/SpamBot/stargazers)
-  [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/Spambot?style=social)](https://github.com/Gladiators-Projects/SpamBot/fork)
+  [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Titan-OP/SpamBot/stargazers)
+  [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/Spambot?style=social)](https://github.com/Titan-OP/SpamBot/fork)
 
 ### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
   
