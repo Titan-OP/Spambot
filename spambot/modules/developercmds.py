@@ -51,14 +51,14 @@ def TeamArsenic_time(milliseconds: int) -> str:
 
 ping_buttons = [
     [
-        InlineKeyboardButton(text="Check Ping", callback_data="pings")
+        InlineKeyboardButton(text="⏱️Cʜᴇᴄᴋ Pɪɴɢ⏱️", callback_data="pings")
     ]
 ]
 
 @run_async
 @sudo_plus
 def restart(update: Update, context: CallbackContext):
-    update.effective_message.reply_text("Restarting bot...")
+    update.effective_message.reply_text("Restarting Toxic SpamBot...!!")
     args = [sys.executable, "-m", "spambot"]
     os.execl(sys.executable, *args)
     
@@ -70,7 +70,7 @@ def ping(update: Update, context: CallbackContext):
     ping_end = datetime.now()
     ms = (ping_end-ping_start).microseconds / 1000
     uptime = TeamArsenic_time((time.time() - Start_time) * 1000)
-    update.effective_message.reply_text(f"•• Pᴏɴɢ !! ••\n⏱ Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs\n⏳ Uᴘᴛɪᴍᴇ - {uptime}")
+    update.effective_message.reply_text(f"✘• Pᴏɴɢ •✘\n••➖➖➖➖➖➖••\n📍 Pɪɴɢ sᴘᴇᴇᴅ : {ms}ᴍs\n🔮 Uᴘᴛɪᴍᴇ : {uptime}\n••➖➖➖➖➖➖••\n              ©@ToxicSpamxD")
 
 
 @run_async
@@ -88,7 +88,7 @@ def leave(update: Update, context: CallbackContext):
             )
             return
         with suppress(Unauthorized):
-            update.effective_message.reply_text("**Successfully left that chat!**")
+            update.effective_message.reply_text("**••Toxic SpamBot••\nSuccessfully left that chat!**")
     else:
         update.effective_message.reply_text("**Am I a joke to you?\nSend a valid chat id bruhh!**")
 
