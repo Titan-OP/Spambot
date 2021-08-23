@@ -1,7 +1,7 @@
 
 <!--This Bot is Made By Toxic Boy-->
 <p align="center">
-  <img src="spambot/resources/Gladiators.jpeg" alt="Logo">
+  <img src="spambot/resources/20210823_170141.jpg" alt="Logo">
 </p>
 
 ### 🚀 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ
