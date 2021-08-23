@@ -19,7 +19,7 @@ from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import InputStickerSetID, InputStickerSetShortName
 
 
-@gladiator(pattern="^/spam(?: |$)(.*)")
+@toxic(pattern="^/spam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -33,10 +33,10 @@ async def gladiators(event):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(1.5)
     except Exception as xy:
-      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+      await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@gladiator(pattern="^/hang(?: |$)(.*)")
+@toxic(pattern="^/hang(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -51,11 +51,11 @@ async def gladiators(event):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(1.5)
     except Exception as xy:
-      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+      await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
 
-@gladiator(pattern="^/wspam(?: |$)(.*)")
+@toxic(pattern="^/wspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -65,10 +65,10 @@ async def gladiators(event):
         await event.client.send_message(event.chat_id, i)
         await asyncio.sleep(1.5)
     except Exception as xy:
-      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+      await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@gladiator(pattern="^/dspam(?: |$)(.*)")
+@toxic(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -81,12 +81,12 @@ async def gladiators(event):
         await event.client.send_message(event.chat_id, mesg)
         await asyncio.sleep(tme)
     except Exception as xy:
-      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+      await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
 
 
-@gladiator(pattern="^/mspam(?: |$)(.*)")
+@toxic(pattern="^/mspam(?: |$)(.*)")
 async def gladiators(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
       try:
@@ -100,10 +100,10 @@ async def gladiators(e):
           await asyncio.sleep(2)
         os.remove(media)
       except Exception as xy:
-        await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+        await e.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
-@gladiator(pattern="^/packspam(?: |$)(.*)")
+@toxic(pattern="^/packspam(?: |$)(.*)")
 async def _(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
       try:
@@ -130,11 +130,11 @@ async def _(e):
           await e.client.send_file(e.chat_id, file=(xx))
           await asyncio.sleep(2)
       except Exception as xy:
-        await e.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+        await e.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
         
         
 
-@gladiator(pattern="^/bigspam(?: |$)(.*)")
+@toxic(pattern="^/bigspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -146,11 +146,11 @@ async def gladiators(event):
         await event.client.send_message(event.chat, mesg)
         await asyncio.sleep(2)
     except Exception as xy:
-      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+      await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
 
 
 
-@gladiator(pattern="^/uspam(?: |$)(.*)")
+@toxic(pattern="^/uspam(?: |$)(.*)")
 async def gladiators(event):
   if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
     try:
@@ -160,4 +160,4 @@ async def gladiators(event):
         await event.client.send_message(event.chat, xD)
         await asyncio.sleep(2)
     except Exception as xy:
-      await event.reply("Oops!! Something went wrong, forward this message to @Gladiators_Support\n\n" + str(xy))
+      await event.reply("Oops!! Something went wrong, forward this message to @TITANX_CHAT\n\n" + str(xy))
