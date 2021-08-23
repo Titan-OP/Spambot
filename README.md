@@ -1,5 +1,5 @@
 
-<!--This Bot is Made By Gladitors Project-->
+<!--This Bot is Made By Toxic Boy-->
 <p align="center">
   <img src="spambot/resources/Gladiators.jpeg" alt="Logo">
 </p>
