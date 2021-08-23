@@ -443,7 +443,7 @@ def replycurse(update: Update, context: CallbackContext) -> str:
 
 @sudo_plus
 @typing_action
-@toxic(pattern="^/curse(?: |$)(.*)")
+@gladiator(pattern="^/curse(?: |$)(.*)")
 async def gladiators(event):
 	if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
 		Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -497,7 +497,7 @@ async def gladiators(event):
 
 @sudo_plus
 @typing_action
-@toxic(pattern="^/ucurse(?: |$)(.*)")
+@gladiator(pattern="^/ucurse(?: |$)(.*)")
 async def gladiators(event):
 	if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
 		xd = await event.get_reply_message()
