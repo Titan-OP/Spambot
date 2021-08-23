@@ -12,7 +12,7 @@ heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
 
 
-@toxic(pattern="^/(set|see|del) var(?: |$)(.*)(?: |$)([\s\S]*)")
+@gladiator(pattern="^/(set|see|del) var(?: |$)(.*)(?: |$)([\s\S]*)")
 async def variable(var):
     if var.fwd_from:
         return
@@ -101,7 +101,7 @@ async def variable(var):
             return await m.edit(f"**{variable}**  `is not exists`")
 
 
-@toxic(pattern="^/usage(?: |$)")
+@gladiator(pattern="^/usage(?: |$)")
 async def dyno_usage(dyno):
     if dyno.fwd_from:
         return
@@ -168,7 +168,7 @@ async def dyno_usage(dyno):
     )
 
 
-@toxic(pattern="^/logs$")
+@gladiator(pattern="^/logs$")
 async def _(dyno):
     if dyno.fwd_from:
         return
