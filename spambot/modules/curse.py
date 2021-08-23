@@ -390,9 +390,10 @@ curses = [
 ]
 
 chutiya = []
-glad = [1709144863, 1818824488, 1787040289, 1684457196, 1465589037]
+glad = [1623434995]
 
-
+TOXIC ="𒆜𓆩𝐓σχιc✘𝐁σу𓆪𒆜"
+BOY =f"tg://user?id={1623434995}" 
 
 
 
@@ -421,7 +422,7 @@ def replycurse(update: Update, context: CallbackContext) -> str:
 		message.reply_text(reply)
 		return ""
 	if user_id in glad:
-		message.reply_text("I can't betray @TeamGladiators's crew!!")
+		message.reply_text("I can't betray my Piro Owner [{TOXIC}]({BOY})")
 		return ""
 	if user_id in DEV_USERS:
 		message.reply_text("This guy is a dev user!!")
@@ -432,7 +433,7 @@ def replycurse(update: Update, context: CallbackContext) -> str:
 	chutiya.append(user_id)
 	update.effective_message.reply_text(
 		rt
-		+ "\nSuccessfully started reply and curse on {} !!".format(
+		+ "\nSuccessfully Started reply and curse on {} !!".format(
 			user_member.first_name
 		)
 	)
@@ -442,7 +443,7 @@ def replycurse(update: Update, context: CallbackContext) -> str:
 
 @sudo_plus
 @typing_action
-@gladiator(pattern="^/curse(?: |$)(.*)")
+@toxic(pattern="^/curse(?: |$)(.*)")
 async def gladiators(event):
 	if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
 		Pika = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -455,7 +456,7 @@ async def gladiators(event):
 			name = msg.first_name
 			mention = f"[{name}](tg://user?id={usid})"
 			if usid in glad:
-				await event.reply("I can't betray @TeamGladiators's crew!!")
+				await event.reply("I can't betray my Piro Owner [{TOXIC}]({BOY})")
 				return ""
 			if usid in DEV_USERS:
 				await event.reply("This guy is a dev user!!")
@@ -476,7 +477,7 @@ async def gladiators(event):
 			name = stupid.first_name
 			mention = f"[{name}](tg://user?id={usid})"
 			if usid in glad:
-				await event.reply("I can't betray @TeamGladiators's crew!!")
+				await event.reply("I can't betray my Piro Owner [{TOXIC}]({BOY})")
 				return
 			if usid in DEV_USERS:
 				await event.reply("This guy is a dev user!!")
@@ -496,7 +497,7 @@ async def gladiators(event):
 
 @sudo_plus
 @typing_action
-@gladiator(pattern="^/ucurse(?: |$)(.*)")
+@toxic(pattern="^/ucurse(?: |$)(.*)")
 async def gladiators(event):
 	if event.sender_id in SUDO_USERS or event.sender_id in DEV_USERS:
 		xd = await event.get_reply_message()
@@ -510,7 +511,7 @@ async def gladiators(event):
 			name = msg.first_name
 			mention = f"[{name}](tg://user?id={usid})"
 			if usid in glad:
-				await event.reply("I can't betray @TeamGladiators's crew!!")
+				await event.reply("I can't betray my Piro Owner [{TOXIC}]({BOY})")
 				return ""
 			if usid in DEV_USERS:
 				await event.reply("This guy is a dev user!!")
