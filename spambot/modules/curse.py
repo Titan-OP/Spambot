@@ -422,7 +422,7 @@ def replycurse(update: Update, context: CallbackContext) -> str:
 		message.reply_text(reply)
 		return ""
 	if user_id in glad:
-		message.reply_text("I can't betray my Piro Owner [{TOXIC}]({BOY})")
+		message.reply_text("I can't betray my Piro Owner")
 		return ""
 	if user_id in DEV_USERS:
 		message.reply_text("This guy is a dev user!!")
@@ -456,7 +456,7 @@ async def gladiators(event):
 			name = msg.first_name
 			mention = f"[{name}](tg://user?id={usid})"
 			if usid in glad:
-				await event.reply("I can't betray my Piro Owner [{TOXIC}]({BOY})")
+				await event.reply("I can't betray my Piro Owner")
 				return ""
 			if usid in DEV_USERS:
 				await event.reply("This guy is a dev user!!")
@@ -511,7 +511,7 @@ async def gladiators(event):
 			name = msg.first_name
 			mention = f"[{name}](tg://user?id={usid})"
 			if usid in glad:
-				await event.reply("I can't betray my Piro Owner [{TOXIC}]({BOY})")
+				await event.reply("I can't betray my Piro Owner")
 				return ""
 			if usid in DEV_USERS:
 				await event.reply("This guy is a dev user!!")
