@@ -6,15 +6,9 @@
 
 ----------------------
 
-## 🤖 Sᴛʀɪɴɢ Sᴇꜱꜱɪᴏɴ
-
-[![Run on Repl.it](https://repl.it/badge/github/YukkiBot/YukkiSpamBot)](https://replit.com/@TitanOPX/ToXiCxD#main.py)
-
-----------------------
-
 ## 🚀 Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Titan-OP/TOXIC-SPAM)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Titan-OP/Spambot/blob/main)
 
 ----------------------
 
