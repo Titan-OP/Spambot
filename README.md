@@ -125,7 +125,7 @@
 
   - **Tᴇʟᴇɢʀᴀᴍ Gʀᴏᴜᴘ :** [『**Cʜᴀᴛ Gʀᴏᴜᴘ**』 ](https://t.me/naughty_stud_ents)
    
-  - **Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** [『**Hᴇʟᴘɪɴɢ Gʀᴏᴜᴘ**』](https://t.me/ToxicSpamxD)
+  - **Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** [『**Hᴇʟᴘ Gʀᴏᴜᴘ**』](https://t.me/ToxicSpamxD)
 
 ----------------------
 
