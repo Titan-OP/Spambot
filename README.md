@@ -22,19 +22,25 @@
 
 ## 🗒️ Nᴇᴄᴇssᴀʀʏ Vᴀʀɪᴀʙʟᴇs
 
-☞ `API_ID` - Get your API_ID from [my.telegram.org](https://my.telegram.org/)<br>
-☞ `API_HASH` - Get your API_HASH from [my.telegram.org](https://my.telegram.org/)<br>
-☞ `BOT_TOKEN` - Your Bot-Token get that from BotFather!!<br>
-☞ `LOGS` - Your logger group id get that using any other bot!!<br>
-☞ `BOT_ID` - Your bot id get that using any other bot!!<br>
-☞ `OWNER_ID` - User id of the master get that using any other bot!!<br>
-☞ `MASTER_NAME` - Name of the master, whivh will be displayed in bots dm!!
+☞ `API_ID` - **ɢᴇᴛ ʏᴏᴜʀꜱ ꜰʀᴏᴍ** [**ʜᴇʀᴇ**](https://my.telegram.org/)<br>
+
+☞ `API_HASH` - **ɢᴇᴛ ʏᴏᴜʀꜱ ꜰʀᴏᴍ** [**ʜᴇʀᴇ**](https://my.telegram.org/)<br>
+
+☞ `BOT_TOKEN` - **ʏᴏᴜʀ ꜱᴘᴀᴍʙᴏᴛ ᴛᴏᴋᴇɴ !!**<br>
+
+☞ `LOGS` - **ʏᴏᴜʀ ʟᴏɢɢᴇʀ ɢʀᴏᴜᴘ ɪᴅ !!**<br>
+
+☞ `BOT_ID` - **ʏᴏᴜʀ ꜱᴘᴀᴍʙᴏᴛ ɪᴅ !!**<br>
+
+☞ `OWNER_ID` - **ᴜꜱᴇʀ ɪᴅ ᴏꜰ ᴛʜᴇ ᴍᴀꜱᴛᴇʀ !!**<br>
+
+☞ `MASTER_NAME` - **ɴᴀᴍᴇ ᴏꜰ ᴛʜᴇ ᴍᴀꜱᴛᴇʀ !!**
 
 ----------------------
 
 ## 👥 Mʏ Sᴏᴄɪᴀʟ Aᴄᴄᴏᴜɴᴛꜱ
 
-📬 **Tᴇʟᴇɢʀᴀᴍ   :** [**𝐓σχιc✘𝐁σу**](https://t.me/ToxicBoyxD) 
+📬 **Tᴇʟᴇɢʀᴀᴍ   :** [**ᴵ ᴬᴹ•Ƭᴏ͠x͢เᴄᴳᵒᵈ᭄**](https://t.me/ToxicBoyxD) 
 
 
 
@@ -48,11 +54,11 @@
 
 ## 📍 Fᴇᴀᴛᴜʀᴇꜱ
 
-   - **ᴅᴇᴘʟᴏʏ ᴏɴ 25 ᴀᴄᴄᴏᴜɴᴛꜱ ᴀᴛ ᴀ ꜱᴀᴍᴇ ᴛɪᴍᴇ**
+   - **ɴᴏɴ-sᴛᴏᴘ sᴘᴀᴍ**
 
-   - **ꜱᴘᴀᴍ ꜱᴘᴇᴇᴅ ᴏᴘ**
+   - **ʟᴇss ғʟᴏᴏᴅᴡᴀɪᴛs**
 
-   - **ʀᴇᴘʟʏʀᴀɪᴅ & ʀᴀɪᴅ ᴘʟᴜɢɪɴ**
+   - **ᴅᴇᴘʟᴏʏ ɪɴ ᴊᴜsᴛ 3-5 ᴍɪɴs**
 
 ----------------------
 
@@ -74,13 +80,8 @@
 
    -  [**тєcнησ✘ρяσ**](https://GitHub.com/Titan-OP) **:** **Oᴡɴᴇʀ Oꜰ Tʜɪꜱ Rᴇᴘᴏꜱɪᴛᴏʀʏ**
 
-   - [**CᴏᴘʏCᴀᴛ**](https://GitHub.com/Copycat-izz-opp) **:** **Cᴏɴᴛʀɪʙᴜᴛᴏʀ Oꜰ Tʜɪꜱ Rᴇᴘᴏꜱɪᴛᴏʀʏ**
+   -  Sᴘᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ Tᴏ [Tᴇᴀᴍ Gʟᴀᴅɪᴀᴛᴏʀs](https://github.com/Gladiators-Projects)
 
-   -  **Sᴘᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ Tᴏ** [**Yukki Team**](https://t.me/officialyukki)
----------
-```
-MODIFIED VERSION OF YUKKI MULTI SPAM BOT!
-```
 --------
 ```
 If you are kanging|copying|taking any part of code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
