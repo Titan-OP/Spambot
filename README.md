@@ -80,7 +80,7 @@
 
    -  [**тєcнησ✘ρяσ**](https://GitHub.com/Titan-OP) **:** **Oᴡɴᴇʀ Oꜰ Tʜɪꜱ Rᴇᴘᴏꜱɪᴛᴏʀʏ**
 
-   -  Sᴘᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ Tᴏ [Tᴇᴀᴍ Gʟᴀᴅɪᴀᴛᴏʀs](https://github.com/Gladiators-Projects)
+   -  **Sᴘᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ Tᴏ** [**Tᴇᴀᴍ Gʟᴀᴅɪᴀᴛᴏʀs**](https://github.com/Gladiators-Projects)
 
 --------
 ```
