@@ -38,7 +38,7 @@
 
 ----------------------
 
-## ⚠️ Cᴏᴍᴍᴀɴᴅs Exᴘʟᴀɴᴀᴛɪᴏɴ
+## ⚠️ Cᴍᴅs Exᴘʟᴀɴᴀᴛɪᴏɴ
 <details>
 <summary>☞ Sᴘᴀᴍ Cᴍᴅs ☜</summary>
 ⧐ /spam - Spams the message for given number of time.
