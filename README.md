@@ -1,24 +1,30 @@
+## 😈 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ 😈 
 
-<!--This Bot is Made By Toxic Boy-->
 <p align="center">
-  <img src="spambot/resources/20210823_170141.jpg" alt="Logo">
+  <img src="https://telegra.ph/file/d8e19ed588fcc7f0050e2.jpg">
 </p>
 
-### 🚀 Tᴏxɪᴄ SᴘᴀᴍBᴏᴛ
+----------------------
 
-  <a href="https://t.me/ToxicBoyxD"><img alt="Telegram" src="https://img.shields.io/badge/Toxic-Boy"></a>
-  [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/Spambot?style=social)](https://github.com/Titan-OP/SpamBot/stargazers)
-  [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/Spambot?style=social)](https://github.com/Titan-OP/SpamBot/fork)
+## 🤖 Sᴛʀɪɴɢ Sᴇꜱꜱɪᴏɴ
 
-### Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
-  
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Titan-OP/Spambot)
+[![Run on Repl.it](https://repl.it/badge/github/YukkiBot/YukkiSpamBot)](https://replit.com/@TitanOPX/ToXiCxD#main.py)
+
+----------------------
+
+## 🚀 Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Titan-OP/TOXIC-SPAM)
+
+----------------------
 
 ### 🛠️ Lᴀɴɢᴜᴀɢᴇs Aɴᴅ Tᴏᴏʟs
 
   ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
   ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
   ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+
+----------------------
 
 ## 🗒️ Nᴇᴄᴇssᴀʀʏ Vᴀʀɪᴀʙʟᴇs
 
@@ -30,14 +36,59 @@
 ☞ `OWNER_ID` - User id of the master get that using any other bot!!<br>
 ☞ `MASTER_NAME` - Name of the master, whivh will be displayed in bots dm!!
 
+----------------------
 
-## 📌 Cʀᴇᴅɪᴛs 
-* [![TeamGladiators-Devs](https://img.shields.io/static/v1?label=TeamGladiators&message=Devs&color=critical)](https://t.me/Gladiators_Devs)
-* [Yone-Bot](https://github.com/noob-kittu/YoneRobot) For Base
-* [Yukki-Bot](https://github.com/YukkiBot/YukkiMultiSpamBot) For Curses.
-* [Ultroid](https://github.com/TeamUltroid/Ultroid) For Some Plugins
-* [Toxic Boy](https://GitHub.com/Titan-OP) Owner Of This Repo
+## 👥 Mʏ Sᴏᴄɪᴀʟ Aᴄᴄᴏᴜɴᴛꜱ
 
+📬 **Tᴇʟᴇɢʀᴀᴍ   :** [**𝐓σχιc✘𝐁σу**](https://t.me/ToxicBoyxD) 
+
+
+
+😺 **GɪᴛHᴜʙ     :** [**тєcнησ✘ρяσ**](https://GitHub.com/Titan-OP) 
+
+
+
+🎭 **Iɴꜱᴛᴀɢʀᴀᴍ  :** [**Tᴇᴄʜɴᴏ★Pʀᴏ**](https://instagram.com/miraculous_tech?utm_medium=copy_link) 
+
+----------------------
+
+## 📍 Fᴇᴀᴛᴜʀᴇꜱ
+
+   - **ᴅᴇᴘʟᴏʏ ᴏɴ 25 ᴀᴄᴄᴏᴜɴᴛꜱ ᴀᴛ ᴀ ꜱᴀᴍᴇ ᴛɪᴍᴇ**
+
+   - **ꜱᴘᴀᴍ ꜱᴘᴇᴇᴅ ᴏᴘ**
+
+   - **ʀᴇᴘʟʏʀᴀɪᴅ & ʀᴀɪᴅ ᴘʟᴜɢɪɴ**
+
+----------------------
+
+<p align="center">
+😈𝐓𝐎𝐗𝐈𝐂 𝐎𝐏 𝐁𝐎𝐋𝐓𝐄😈
+</p>
+
+----------------------
+  
+## 👮 Sᴜᴘᴘᴏʀᴛ
+
+  - **Tᴇʟᴇɢʀᴀᴍ Gʀᴏᴜᴘ :** [『**Cʜᴀᴛ Gʀᴏᴜᴘ**』 ](https://t.me/naughty_stud_ents)
+   
+  - **Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** [『**Hᴇʟᴘɪɴɢ Gʀᴏᴜᴘ**』](https://t.me/ToxicSpamxD)
+
+----------------------
+
+## 🎀 Cʀᴇᴅɪᴛs
+
+   -  [**тєcнησ✘ρяσ**](https://GitHub.com/Titan-OP) **:** **Oᴡɴᴇʀ Oꜰ Tʜɪꜱ Rᴇᴘᴏꜱɪᴛᴏʀʏ**
+
+   - [**CᴏᴘʏCᴀᴛ**](https://GitHub.com/Copycat-izz-opp) **:** **Cᴏɴᴛʀɪʙᴜᴛᴏʀ Oꜰ Tʜɪꜱ Rᴇᴘᴏꜱɪᴛᴏʀʏ**
+
+   -  **Sᴘᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ Tᴏ** [**Yukki Team**](https://t.me/officialyukki)
+---------
 ```
-If you are taking code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
+MODIFIED VERSION OF YUKKI MULTI SPAM BOT!
 ```
+--------
+```
+If you are kanging|copying|taking any part of code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
+```
+--------
