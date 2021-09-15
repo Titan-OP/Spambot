@@ -33,7 +33,12 @@ pytz
 lyricsgenius
 tswift
 envparse
-
+python-decouple
+telethon
+cryptg
+heroku3
+psycopg2
+gitpython
 
 motor
 cloudscraper
